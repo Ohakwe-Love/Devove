@@ -10,17 +10,17 @@
 :root {
     --card-border: #475569;
     --card-background: hsl(215, 26%, 7.5%);
-    --color: ghostwhite;
+    --color: #f8f8ff;
     --background-2: #09090b;
     --background-3: #232b34;
     --contrast: #fff;
     --size: 5rem;
-    --text-color: rgba(255, 255, 255, 0.7);
+    --text-color: #ffffffb3;
     --accent: #24d364;
     --badge-color: #6EE7B7;
     --fade-accent: #24d36431;
-    --primary: rgb(234, 3, 234);
-    --secondary: rgb(0, 140, 255);
+    --primary: #ea03ea;
+    --secondary: #008cff;
     --line-gradient: linear-gradient(80deg, var(--primary), var(--secondary));
     --bd-primary: #ffffff30;
     --hover-btn-bg: #ffffff0d;
