@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Love Ohakwe - Software Engineer specializing in JavaScript ecosystem. Dedicated problem-solver who thrives on learning and building innovative solutions.">
+    <meta name="keywords"
+        content="software engineer, JavaScript developer, web development, problem solver, PHP Developer, React JS, Laravel Developer">
+    <meta name="author" content="Love Ohakwe">
+    <title>Ohakwe Love - Software Engineer | JavaScript Developer</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <!-- js -->
+    <script src="assets/js/script.js" defer></script>
+
+    <style>
+        #preloader {
+            height: 100vh;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            z-index: 9999999
+        }
+
+        #preloader:after,
+        #preloader:before {
+            background: #252531;
+            content: "";
+            height: 50%;
+            left: 0;
+            position: fixed;
+            transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+            width: 100%
+        }
+
+        #preloader:before {
+            top: 0
+        }
+
+        #preloader:after {
+            bottom: 0
+        }
+
+        #preloader.isdone {
+            transition-delay: 1.5s;
+            visibility: hidden
+        }
+
+        #preloader.isdone:after,
+        #preloader.isdone:before {
+            height: 0;
+            transition: all .7s cubic-bezier(1, 0, .55, 1);
+            transition-delay: 1s
+        }
+
+        .loading {
+            font-size: 13px;
+            font-weight: 300;
+            left: 50%;
+            letter-spacing: 10px;
+            position: fixed;
+            text-transform: uppercase;
+            top: calc(50% - 40px);
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 9999999999
+        }
+
+        .loading.isdone {
+            opacity: 0;
+            top: 50%;
+            transition: all .8s;
+            transition-delay: .5s
+        }
+
+        .loading span {
+            animation: loading 1.4s infinite alternate
+        }
+
+        .loading span:first-child {
+            animation-delay: 0s
+        }
+
+        .loading span:nth-child(2) {
+            animation-delay: .1s
+        }
+
+        .loading span:nth-child(3) {
+            animation-delay: .2s
+        }
+
+        .loading span:nth-child(4) {
+            animation-delay: .3s
+        }
+
+        .loading span:nth-child(5) {
+            animation-delay: .4s
+        }
+
+        .loading span:nth-child(6) {
+            animation-delay: .5s
+        }
+
+        .loading span:nth-child(7) {
+            animation-delay: .6s
+        }
+
+        @keyframes loading {
+            0% {
+                opacity: 1
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main container -->
+    <main>
+        <!-- view resume -->
+        <div class="view-resume-container">
+            <a href="my_cv.html" target="_blank" class="view-resume primary-btn animated-border">
+                Resume
+
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-circle"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z" />
+                    </svg>
+                </span>
+            </a>
+        </div>
+
+        <section class="hero-wrapper">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span>Available for projects</span>
+                    </div>
+
+                    <h1>Hi, I'm Lovely. <br>
+                        A software engineer.</h1>
+
+                    <p class="description">
+                        Mainly working in the JavaScript ecosystem, I'm a dedicated problem-solver who thrives on
+                        learning and building.
+                    </p>
+
+                    <div class="cta-section">
+                        <div class="board">
+                            <div class="key-position">
+                                <a aria-label="Github" class="key" data-key="Github" target="_blank" href=""> <svg
+                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24" data-astro-cid-wyj6lz6x="true">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5" color="currentColor">
+                                            <path d="M10 20.568c-3.429 1.157-6.286 0-8-3.568"></path>
+                                            <path
+                                                d="M10 22v-3.242c0-.598.184-1.118.48-1.588c.204-.322.064-.78-.303-.88C7.134 15.452 5 14.107 5 9.645c0-1.16.38-2.25 1.048-3.2c.166-.236.25-.354.27-.46c.02-.108-.015-.247-.085-.527c-.283-1.136-.264-2.343.16-3.43c0 0 .877-.287 2.874.96c.456.285.684.428.885.46s.469-.035 1.005-.169A9.5 9.5 0 0 1 13.5 3a9.6 9.6 0 0 1 2.343.28c.536.134.805.2 1.006.169c.2-.032.428-.175.884-.46c1.997-1.247 2.874-.96 2.874-.96c.424 1.087.443 2.294.16 3.43c-.07.28-.104.42-.084.526s.103.225.269.461c.668.95 1.048 2.04 1.048 3.2c0 4.462-2.134 5.807-5.177 6.643c-.367.101-.507.559-.303.88c.296.47.48.99.48 1.589V22">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="LinkedIn" class="key" data-key="LinkedIn" target="_blank" href="">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24" data-astro-cid-wyj6lz6x="true">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5"
+                                            d="M4.5 9.5H4c-.943 0-1.414 0-1.707.293S2 10.557 2 11.5V20c0 .943 0 1.414.293 1.707S3.057 22 4 22h.5c.943 0 1.414 0 1.707-.293S6.5 20.943 6.5 20v-8.5c0-.943 0-1.414-.293-1.707S5.443 9.5 4.5 9.5m2-5.25a2.25 2.25 0 1 1-4.5 0a2.25 2.25 0 0 1 4.5 0m5.826 5.25H11.5c-.943 0-1.414 0-1.707.293S9.5 10.557 9.5 11.5V20c0 .943 0 1.414.293 1.707S10.557 22 11.5 22h.5c.943 0 1.414 0 1.707-.293S14 20.943 14 20v-3.5c0-1.657.528-3 2.088-3c.78 0 1.412.672 1.412 1.5v4.5c0 .943 0 1.414.293 1.707s.764.293 1.707.293h.499c.942 0 1.414 0 1.707-.293c.292-.293.293-.764.293-1.706L22 14c0-2.486-2.364-4.5-4.703-4.5c-1.332 0-2.52.652-3.297 1.673c0-.63 0-.945-.137-1.179a1 1 0 0 0-.358-.358c-.234-.137-.549-.137-1.179-.137"
+                                            color="currentColor"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="Resume" class="key" data-key="Resume" target="_blank" href="my_cv.html">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24" data-astro-cid-wyj6lz6x="true">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5"
+                                            d="M5.975 16.987V6.532c0-1.345.057-2.906 1.065-3.8C7.866 2 9.034 2 10.14 2h7.31c1.027 0 2.092.018 3.012.47q.112.055.213.115C22.042 3.388 22 5.302 22 6.885v10.532c0 1.041-.048 2.111-.48 3.059c-.414.907-.98 1.314-2.024 1.506M5.975 16.987h8.83c.413 0 .785.253.93.638c.126.337.23.627.323.9c.323.958.607 1.969 1.287 2.717c.409.45.838.678 1.41.74m-12.78-4.995H2.969c-.553 0-1.011.447-.966.997c.047.576.15 1.078.34 1.615c.336.95.92 1.911 1.88 2.225c.354.115.746.153 1.251.158h13.28m.742 0a4 4 0 0 1-.742 0m.742 0h-.742M10.469 7h7m-7 4h3.5"
+                                            color="currentColor"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="Email" class="key" data-key="Email" target="_blank" href=""> <svg
+                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24" data-astro-cid-wyj6lz6x="true">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5" color="currentColor">
+                                            <path d="m2 6l6.913 3.917c2.549 1.444 3.625 1.444 6.174 0L22 6"></path>
+                                            <path
+                                                d="M2.016 13.476c.065 3.065.098 4.598 1.229 5.733c1.131 1.136 2.705 1.175 5.854 1.254c1.94.05 3.862.05 5.802 0c3.149-.079 4.723-.118 5.854-1.254c1.131-1.135 1.164-2.668 1.23-5.733c.02-.986.02-1.966 0-2.952c-.066-3.065-.099-4.598-1.23-5.733c-1.131-1.136-2.705-1.175-5.854-1.254a115 115 0 0 0-5.802 0c-3.149.079-4.723.118-5.854 1.254c-1.131 1.135-1.164 2.668-1.23 5.733a69 69 0 0 0 0 2.952">
+                                            </path>
+                                        </g>
+                                    </svg> </a>
+                            </div>
+                        </div>
+
+                        <div class="key-position"> <a id="cta-hero-btn" href="" data-block="center"
+                                class="key call-to-action-btn peer">
+                                <p class="border-line call-to-action-content">Explore more</p>
+                            </a> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- navigation -->
+        <div id="nav-container" class="nav-container">
+            <nav>
+                <div id="bottom-nav-bar-upper"></div>
+                <ul id="nav-dock" class="">
+                    <div class="nav-tool-tip" aria-hidden="true">
+                        <p class="nav-tool-tip__text" aria-hidden="true"></p>
+                    </div>
+
+                    <li>
+                        <a href="" class="nav-link nav-home-link" data-tooltip="Home">
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                                class="size-5">
+                                <path fill="currentColor"
+                                    d="m220.17 100l-17.31-30a28 28 0 0 0-38.24-10.25a27.7 27.7 0 0 0-9 8.34L138.2 38a28 28 0 0 0-48.48 0a28 28 0 0 0-41.57 36l1.59 2.76A27.7 27.7 0 0 0 38 80.41a28 28 0 0 0-10.24 38.25l40 69.32a87.47 87.47 0 0 0 53.43 41a88.6 88.6 0 0 0 22.92 3a88 88 0 0 0 76.06-132Zm-6.66 62.64A72 72 0 0 1 81.62 180l-40-69.32a12 12 0 0 1 20.78-12L81.63 132a8 8 0 1 0 13.85-8L62 66a12 12 0 1 1 20.78-12L114 108a8 8 0 1 0 13.85-8l-24.28-42a12 12 0 1 1 20.78-12l33.42 57.9a48 48 0 0 0-5.54 60.6a8 8 0 0 0 13.24-9a32 32 0 0 1 7.31-43.5a8 8 0 0 0 2.13-10.4L168.23 90A12 12 0 1 1 189 78l17.31 30a71.56 71.56 0 0 1 7.2 54.62ZM184.25 31.71A8 8 0 0 1 194 26a59.62 59.62 0 0 1 36.53 28l.33.57a8 8 0 1 1-13.85 8l-.33-.57a43.67 43.67 0 0 0-26.8-20.5a8 8 0 0 1-5.63-9.79M80.89 237a8 8 0 0 1-11.23 1.33A119.6 119.6 0 0 1 40.06 204a8 8 0 0 1 13.86-8a103.7 103.7 0 0 0 25.64 29.72A8 8 0 0 1 80.89 237">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link nav-about-link" data-tooltip="About">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav-link nav-skills-link" data-tooltip="Skills">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-layers"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0zM8 9.433 1.562 6 8 2.567 14.438 6z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link nav-projects-link" data-tooltip="Projects">
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                                class="size-5">
+                                <path fill="currentColor"
+                                    d="M216 56h-40v-8a24 24 0 0 0-24-24h-48a24 24 0 0 0-24 24v8H40a16 16 0 0 0-16 16v128a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V72a16 16 0 0 0-16-16M96 48a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v8H96Zm120 24v41.61A184 184 0 0 1 128 136a184.1 184.1 0 0 1-88-22.38V72Zm0 128H40v-68.36A200.2 200.2 0 0 0 128 152a200.25 200.25 0 0 0 88-20.37zm-112-88a8 8 0 0 1 8-8h32a8 8 0 0 1 0 16h-32a8 8 0 0 1-8-8">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link nav-contact-link" data-tooltip="Contact">
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                                class="size-5">
+                                <path fill="currentColor"
+                                    d="M132 24A100.11 100.11 0 0 0 32 124v84a16 16 0 0 0 16 16h84a100 100 0 0 0 0-200m0 184H48v-84a84 84 0 1 1 84 84m12-80a12 12 0 1 1-12-12a12 12 0 0 1 12 12m-44 0a12 12 0 1 1-12-12a12 12 0 0 1 12 12m88 0a12 12 0 1 1-12-12a12 12 0 0 1 12 12">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- about -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-header-col">
+                        <div class="section-label">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z">
+                                    </path>
+                                </svg>
+                            </span>
+                            About
+                        </div>
+
+                        <h2 class="section-heading">Learning, Building, and Documenting</h2>
+                    </div>
+                    <div class="section-header-col">
+                        <a href="" class="primary-btn animated-border">
+                            Get to know me
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-row">
+                    <div class="about-col">
+                        <h2>A journey in crafting engaging experiences and exploring new horizons</h2>
+
+                        <p>
+                            I have started my career as an IoT engineer, diving deep into the world of interconnected
+                            devices and cutting-edge technology. However, my passion for crafting meaningful and
+                            engaging user experiences led me to switch careers and pursue product design.
+                        </p>
+
+                        <p>
+                            When I'm not immersed in design projects, you'll likely find me exploring new cities with my
+                            camera, capturing the beauty of everyday life. Balancing work with personal adventures keeps
+                            me inspired and fuels my creativity.
+                        </p>
+
+                        <a href="#projects" class="projects-link">
+                            <i class="border-line">Discover more projects</i>
+                            <span>
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="about-col">
+                        <img src="assets/images/img2.jpeg" alt="Lovely">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- stacks -->
+        <section class="stacks">
+            <div class="container">
+                <div class="section-header">
+
+                    <div class="section-header-col">
+                        <div class="section-label">
+                            <span>
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                    viewBox="0 0 256 256" class="size-4">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="m220 169.09l-92 53.65l-92-53.65a8 8 0 0 0-8 13.82l96 56a8 8 0 0 0 8.06 0l96-56a8 8 0 1 0-8.06-13.82">
+                                        </path>
+                                        <path
+                                            d="m220 121.09l-92 53.65l-92-53.65a8 8 0 0 0-8 13.82l96 56a8 8 0 0 0 8.06 0l96-56a8 8 0 1 0-8.06-13.82">
+                                        </path>
+                                        <path
+                                            d="m28 86.91l96 56a8 8 0 0 0 8.06 0l96-56a8 8 0 0 0 0-13.82l-96-56a8 8 0 0 0-8.06 0l-96 56a8 8 0 0 0 0 13.82">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                            Tech Stacks
+                        </div>
+
+                        <h2 class="section-heading">Tech stacks I'm familiar with</h2>
+                    </div>
+                </div>
+
+                <div class="stacks-container">
+                    <div class="stacks-track">
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/android.svg" alt="android">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/appstore.svg" alt="appstore">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/css3.svg" alt="css3">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/cloud.svg" alt="cloud">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/git.svg" alt="git">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/html.svg" alt="html">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/js.svg" alt="js">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/laravel.svg" alt="laravel">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/mysql.svg" alt="mysql">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/net.svg" alt=".net">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/php.svg" alt="php">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/postgresql.svg" alt="postgresql">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/react.svg" alt="react">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/vite.svg" alt="vite">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/android.svg" alt="android">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/android.svg" alt="android">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/android.svg" alt="android">
+                        </div>
+
+
+
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/android.svg" alt="android">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/appstore.svg" alt="appstore">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/css3.svg" alt="css3">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/cloud.svg" alt="cloud">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/git.svg" alt="git">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/html.svg" alt="html">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/js.svg" alt="js">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/laravel.svg" alt="laravel">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/mysql.svg" alt="mysql">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/net.svg" alt=".net">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/php.svg" alt="php">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/postgresql.svg" alt="postgresql">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/react.svg" alt="react">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/vite.svg" alt="vite">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/android.svg" alt="android">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/android.svg" alt="android">
+                        </div>
+                        <div class="stack-item">
+                            <img src="assets/images/stacks/android.svg" alt="android">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills -->
+        <div class="skills-container">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-header-col">
+                        <div class="section-label">
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                    <path d="M12 17.77V22"></path>
+                                    <path d="M10 12l-2-2"></path>
+                                    <path d="M14 12l2-2"></path>
+                                    <path d="M12 14l0 2"></path>
+                                </svg>
+                            </span>
+                            Expertise
+                        </div>
+                        <h2 class="section-heading">Technical Mastery</h2>
+                        <p class="section-subtitle">Crafting exceptional digital experiences through cutting-edge
+                            technologies
+                            and design principles</p>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <div class="icon-glow"></div>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"
+                                    stroke="url(#grad1)" />
+                                <defs>
+                                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:rgb(234,3,234);stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:rgb(0,140,255);stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Communication & Articulation</h3>
+                        <p class="skill-description">Clearly explain technical issues and updates to both technical and
+                            non-technical stakeholders.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <div class="icon-glow"></div>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 18h6" stroke="url(#grad2)" />
+                                <path d="M10 12v3" stroke="url(#grad2)" />
+                                <path d="M14 12v3" stroke="url(#grad2)" />
+                                <path
+                                    d="M10 9l.5-1.5 2-1 2-1.5.5-1.5A3.5 3.5 0 0115.5 3a3.5 3.5 0 012.8 5.75L18 10h1a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6a1 1 0 011-1h1l.2-1.25A3.5 3.5 0 018.5 3a3.5 3.5 0 015.75 3.2z"
+                                    stroke="url(#grad2)" />
+                                <defs>
+                                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:rgb(234,3,234);stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:rgb(0,140,255);stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Problem-Solving & Debugging</h3>
+                        <p class="skill-description">Approach complex technical challenges with a structured, logical,
+                            and systematic mindset.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <div class="icon-glow"></div>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="url(#grad3)" />
+                                <circle cx="9" cy="7" r="4" stroke="url(#grad3)" />
+                                <path d="M23 21v-2a4 4 0 00-3-3.87m-2-1.03V15" stroke="url(#grad3)" />
+                                <path d="M16 3.13a4 4 0 010 7.75" stroke="url(#grad3)" />
+                                <defs>
+                                    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:rgb(234,3,234);stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:rgb(0,140,255);stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Collaboration & Code Review</h3>
+                        <p class="skill-description">Work effectively in a team, provide constructive code feedback, and
+                            utilize Git flow smoothly.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <div class="icon-glow"></div>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M21.5 6.5l-2.48 2.48A7 7 0 0012 5V2L8.5 5.5 12 9V7a5 5 0 014.28 2.5l-1.38 1.38A7 7 0 0012 19v3l3.5-3.5-3.5-3.5V17a5 5 0 01-4.28-2.5l1.38-1.38A7 7 0 0012 5.02"
+                                    stroke="url(#grad4)" />
+                                <defs>
+                                    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:rgb(234,3,234);stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:rgb(0,140,255);stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Adaptability & Learning</h3>
+                        <p class="skill-description">Quickly master new frameworks, adapt to changing project
+                            requirements, and learn continuously.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <div class="icon-glow"></div>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" stroke="url(#grad5)" />
+                                <polyline points="12 6 12 12 16 14" stroke="url(#grad5)" />
+                                <defs>
+                                    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:rgb(234,3,234);stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:rgb(0,140,255);stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Time Management & Prioritization</h3>
+                        <p class="skill-description">Accurately estimate development time, prioritize competing tasks,
+                            and consistently meet deadlines.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <div class="icon-glow"></div>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="url(#grad6)" />
+                                <circle cx="12" cy="12" r="3" stroke="url(#grad6)" />
+                                <defs>
+                                    <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:rgb(234,3,234);stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:rgb(0,140,255);stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Attention to Detail (Meticulousness)</h3>
+                        <p class="skill-description">Write clean, tested, error-free code and catch minor flaws in logic
+                            or user interface.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <div class="icon-glow"></div>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.15C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                                    stroke="url(#grad7)" />
+                                <defs>
+                                    <linearGradient id="grad7" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:rgb(234,3,234);stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:rgb(0,140,255);stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Empathy & User Focus</h3>
+                        <p class="skill-description">Understand user needs, focusing on accessibility, performance, and
+                            overall usability.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <div class="icon-glow"></div>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 11h.01M19 12h.01M5 12h.01M12 2a10 10 0 00-4 18.33V22l1-1h6a10 10 0 000-20z"
+                                    stroke="url(#grad8)" />
+                                <path d="M13.78 13.78a2 2 0 10-2.83-2.83 2 2 0 002.83 2.83z" stroke="url(#grad8)" />
+                                <defs>
+                                    <linearGradient id="grad8" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:rgb(234,3,234);stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:rgb(0,140,255);stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Critical Thinking & Analysis</h3>
+                        <p class="skill-description">Evaluate different technical paths and analyze the long-term impact
+                            of design decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-header-col">
+                        <div class="section-label">
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path
+                                        d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2h-2a2 2 0 01-2-2v-.09A1.65 1.65 0 004.66 19.66l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00-.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 012-2h.09A1.65 1.65 0 005.9 8.34l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H12a2 2 0 012-2h2a2 2 0 012 2v.09A1.65 1.65 0 0019.66 4.34l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82v.09a1.65 1.65 0 001 1.51H21a2 2 0 01-2 2h-.09z">
+                                    </path>
+                                </svg>
+                            </span>
+                            Services
+                        </div>
+
+                        <h2 class="section-heading">Elevate Your Digital Presence</h2>
+
+                        <p class="section-subtitle">Offering a range of services to bring your ideas to life</p>
+                    </div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card" data-service="1">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">Cutting-edge web applications engineered with modern frameworks
+                            and scalable architectures that deliver exceptional performance.</p>
+                        <ul class="service-features">
+                            <li>Custom full-stack development</li>
+                            <li>Progressive web applications</li>
+                            <li>API integration & optimization</li>
+                            <li>Performance & SEO mastery</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-service="4">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <polyline points="7.5 4.21 12 6.81 16.5 4.21" />
+                                <polyline points="7.5 19.79 7.5 14.6 3 12" />
+                                <polyline points="21 12 16.5 14.6 16.5 19.79" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Digital Products</h3>
+                        <p class="service-description">End-to-end product development from conception to launch,
+                            building scalable solutions that solve real problems and drive growth.</p>
+                        <ul class="service-features">
+                            <li>MVP development & testing</li>
+                            <li>Product roadmap strategy</li>
+                            <li>Continuous iteration & scaling</li>
+                            <li>Analytics & optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-service="6">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Consulting</h3>
+                        <p class="service-description">Strategic guidance and technical expertise to navigate complex
+                            digital challenges and accelerate your business transformation.</p>
+                        <ul class="service-features">
+                            <li>Technical architecture review</li>
+                            <li>Digital strategy planning</li>
+                            <li>Team augmentation</li>
+                            <li>Process optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-service="8">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <line x1="10" y1="9" x2="8" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Technical Documentation</h3>
+                        <p class="service-description">Creating clear, comprehensive, and maintainable documentation for
+                            APIs, codebases, and technical processes.</p>
+                        <ul class="service-features">
+                            <li>API reference guides</li>
+                            <li>Developer handbooks</li>
+                            <li>System architecture diagrams</li>
+                            <li>User manuals & tutorials</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects -->
+        <section class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-header-col">
+                        <div class="section-label">
+                            <span>
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                                    class="size-5">
+                                    <path fill="currentColor"
+                                        d="M216 56h-40v-8a24 24 0 0 0-24-24h-48a24 24 0 0 0-24 24v8H40a16 16 0 0 0-16 16v128a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V72a16 16 0 0 0-16-16M96 48a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v8H96Zm120 24v41.61A184 184 0 0 1 128 136a184.1 184.1 0 0 1-88-22.38V72Zm0 128H40v-68.36A200.2 200.2 0 0 0 128 152a200.25 200.25 0 0 0 88-20.37zm-112-88a8 8 0 0 1 8-8h32a8 8 0 0 1 0 16h-32a8 8 0 0 1-8-8">
+                                    </path>
+                                </svg>
+                            </span>
+                            Projects
+                        </div>
+
+                        <h2 class="section-heading">Milestones in the
+                            learning journey</h2>
+
+                        <p class="section-subtitle">Each project marks a step forward, showcasing my growth and journey
+                            as a developer.
+                            Explore how I’ve tackled challenges and built solutions along the way.</p>
+                    </div>
+
+                    <div class="section-header-col">
+                        <a href="" target="_blank" class="view-resume primary-btn animated-border">
+                            Explore Projects
+
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="card-shine"></div>
+                        <div class="project-img">
+                            <img src="assets/images/projects/1.png" alt="">
+
+                            <!-- Action Buttons -->
+                            <div class="project-actions">
+                                <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                        <path fill-rule="evenodd"
+                                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                </a>
+
+                                <button class="action-btn quickview-btn" title="Quick View">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path
+                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-specs">
+                                <div class="project-badge-con">
+                                    <span class="project-badge dynamic">dynamic</span>
+                                    <!-- <span class="project-badge static">static</span> -->
+                                </div>
+                                <div class="project-status-con">
+                                    <div class="status-badge live">
+                                        <span class="status-dot"></span>
+                                        <span>live</span>
+                                    </div>
+                                    <!-- <div class="status-badge in-progress">
+                                        <span class="status-dot"></span>
+                                        <span>in progress</span>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <h3 class="project-title">Frontend Development</h3>
+                            <p class="project-description">Building responsive, performant interfaces with modern
+                                frameworks
+                                and best practices in web standards.</p>
+                            <div class="project-stacks">
+                                <span class="project-stack">React</span>
+                                <span class="project-stack">TypeScript</span>
+                                <span class="project-stack">Next.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-shine"></div>
+                        <div class="project-img">
+                            <img src="assets/images/projects/1.png" alt="">
+
+                            <!-- Action Buttons -->
+                            <div class="project-actions">
+                                <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                        <path fill-rule="evenodd"
+                                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                </a>
+
+                                <button class="action-btn quickview-btn" title="Quick View">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path
+                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-specs">
+                                <div class="project-badge-con">
+                                    <span class="project-badge dynamic">dynamic</span>
+                                    <!-- <span class="project-badge static">static</span> -->
+                                </div>
+                                <div class="project-status-con">
+                                    <div class="status-badge live">
+                                        <span class="status-dot"></span>
+                                        <span>live</span>
+                                    </div>
+                                    <!-- <div class="status-badge in-progress">
+                                        <span class="status-dot"></span>
+                                        <span>in progress</span>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <h3 class="project-title">Frontend Development</h3>
+                            <p class="project-description">Building responsive, performant interfaces with modern
+                                frameworks
+                                and best practices in web standards.</p>
+                            <div class="project-stacks">
+                                <span class="project-stack">React</span>
+                                <span class="project-stack">TypeScript</span>
+                                <span class="project-stack">Next.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-shine"></div>
+                        <div class="project-img">
+                            <img src="assets/images/projects/1.png" alt="">
+
+                            <!-- Action Buttons -->
+                            <div class="project-actions">
+                                <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                        <path fill-rule="evenodd"
+                                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                </a>
+
+                                <button class="action-btn quickview-btn" title="Quick View">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path
+                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-specs">
+                                <div class="project-badge-con">
+                                    <span class="project-badge dynamic">dynamic</span>
+                                    <!-- <span class="project-badge static">static</span> -->
+                                </div>
+                                <div class="project-status-con">
+                                    <div class="status-badge live">
+                                        <span class="status-dot"></span>
+                                        <span>live</span>
+                                    </div>
+                                    <!-- <div class="status-badge in-progress">
+                                        <span class="status-dot"></span>
+                                        <span>in progress</span>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <h3 class="project-title">Frontend Development</h3>
+                            <p class="project-description">Building responsive, performant interfaces with modern
+                                frameworks
+                                and best practices in web standards.</p>
+                            <div class="project-stacks">
+                                <span class="project-stack">React</span>
+                                <span class="project-stack">TypeScript</span>
+                                <span class="project-stack">Next.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="connect">
+            <div class="container">
+                <div class="connect-container">
+                    <div class="connect-content">
+                        <h2 class="connect-title">Ready to Build Something Extraordinary?</h2>
+                        <p class="connect-description">Let's discuss how we can transform your vision into a digital
+                            masterpiece
+                            that drives results and exceeds expectations.</p>
+                        <a href="" target="_blank" class="view-resume primary-btn animated-border">
+                            Contact Here
+
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>Developer • Love Ohakwe</h2>
+                    <p>
+                        Ready to start your next project or simply have a question about modern web architecture?
+                        Webelieve in transparent, collaborative development.
+                    </p>
+                </div>
+
+                <div class="footer-column footer-help-col">
+                    <h3>Help Links -:</h3>
+                    <ul>
+                        <li><a href="#" class="border-line">About</a></li>
+                        <li><a href="#" class="border-line">Projects</a></li>
+                        <li><a href="#" class="border-line">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column footer-contact-col">
+                    <h3>Contact -:</h3>
+                    <ul>
+                        <li>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75    1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5" />
+                                </svg>
+                            </span>
+                            <a href="tel:+2348161452508">+234 816 145 2508</a>
+                        </li>
+                        <li>
+                            <span>
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                    viewBox="0 0 24 24" data-astro-cid-wyj6lz6x="true">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" color="currentColor">
+                                        <path d="m2 6l6.913 3.917c2.549 1.444 3.625 1.444 6.174 0L22 6"></path>
+                                        <path
+                                            d="M2.016 13.476c.065 3.065.098 4.598 1.229 5.733c1.131 1.136 2.705 1.175 5.854 1.254c1.94.05 3.862.05 5.802 0c3.149-.079 4.723-.118 5.854-1.254c1.131-1.135 1.164-2.668 1.23-5.733c.02-.986.02-1.966 0-2.952c-.066-3.065-.099-4.598-1.23-5.733c-1.131-1.136-2.705-1.175-5.854-1.254a115 115 0 0 0-5.802 0c-3.149.079-4.723.118-5.854 1.254c-1.131 1.135-1.164 2.668-1.23 5.733a69 69 0 0 0 0 2.952">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                            <a href="mailto:ohakwemuna@gmail.com">ohakwemuna@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <!-- <h3>Socials -:</h3> -->
+                    <div class="cta-section">
+                        <div class="board">
+                            <div class="key-position">
+                                <a aria-label="Github" class="key" data-key="Github" target="_blank" href=""> <svg
+                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24" data-astro-cid-wyj6lz6x="true">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5" color="currentColor">
+                                            <path d="M10 20.568c-3.429 1.157-6.286 0-8-3.568"></path>
+                                            <path
+                                                d="M10 22v-3.242c0-.598.184-1.118.48-1.588c.204-.322.064-.78-.303-.88C7.134 15.452 5 14.107 5 9.645c0-1.16.38-2.25 1.048-3.2c.166-.236.25-.354.27-.46c.02-.108-.015-.247-.085-.527c-.283-1.136-.264-2.343.16-3.43c0 0 .877-.287 2.874.96c.456.285.684.428.885.46s.469-.035 1.005-.169A9.5 9.5 0 0 1 13.5 3a9.6 9.6 0 0 1 2.343.28c.536.134.805.2 1.006.169c.2-.032.428-.175.884-.46c1.997-1.247 2.874-.96 2.874-.96c.424 1.087.443 2.294.16 3.43c-.07.28-.104.42-.084.526s.103.225.269.461c.668.95 1.048 2.04 1.048 3.2c0 4.462-2.134 5.807-5.177 6.643c-.367.101-.507.559-.303.88c.296.47.48.99.48 1.589V22">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="LinkedIn" class="key" data-key="LinkedIn" target="_blank" href="">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24" data-astro-cid-wyj6lz6x="true">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5"
+                                            d="M4.5 9.5H4c-.943 0-1.414 0-1.707.293S2 10.557 2 11.5V20c0 .943 0 1.414.293 1.707S3.057 22 4 22h.5c.943 0 1.414 0 1.707-.293S6.5 20.943 6.5 20v-8.5c0-.943 0-1.414-.293-1.707S5.443 9.5 4.5 9.5m2-5.25a2.25 2.25 0 1 1-4.5 0a2.25 2.25 0 0 1 4.5 0m5.826 5.25H11.5c-.943 0-1.414 0-1.707.293S9.5 10.557 9.5 11.5V20c0 .943 0 1.414.293 1.707S10.557 22 11.5 22h.5c.943 0 1.414 0 1.707-.293S14 20.943 14 20v-3.5c0-1.657.528-3 2.088-3c.78 0 1.412.672 1.412 1.5v4.5c0 .943 0 1.414.293 1.707s.764.293 1.707.293h.499c.942 0 1.414 0 1.707-.293c.292-.293.293-.764.293-1.706L22 14c0-2.486-2.364-4.5-4.703-4.5c-1.332 0-2.52.652-3.297 1.673c0-.63 0-.945-.137-1.179a1 1 0 0 0-.358-.358c-.234-.137-.549-.137-1.179-.137"
+                                            color="currentColor"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="Bluesky" class="key" data-key="Bluesky" target="_blank"
+                                    href="my_cv.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-bluesky" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="Facebook" class="key" data-key="Facebook" target="_blank" href=""> <svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                                        <path
+                                            d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="Instagram" class="key" data-key="Instagram" target="_blank" href=""> <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                    </svg></a>
+                            </div>
+
+                            <div class="key-position">
+                                <a aria-label="Twitter" class="key" data-key="Twitter" target="_blank" href=""> <svg
+                                        viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">&copy; <span class="year">Year</span> Lovely. All rights reserved.</div>
+                <!-- <div class="last-updated">Last updated by Lovely on October 19, 2025 at 5:20 PM UTC+7</div> -->
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
