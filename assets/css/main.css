@@ -89,6 +89,20 @@ main {
     position: relative;
 }
 
+header .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        font-weight: 900;
+        font-size: 30px;
+        letter-spacing: 1.2px;
+    }
+}
+
 .primary-btn {
     display: inline-flex;
     padding: 10px 25px;
