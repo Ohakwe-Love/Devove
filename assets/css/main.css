@@ -487,6 +487,7 @@ header .container {
         flex-direction: column;
         gap: 20px;
         align-items: flex-start;
+        margin-bottom: 3rem;
     }
 
 }
@@ -606,7 +607,6 @@ footer {
     }
 }
 
-/* When the page is near the bottom, move the nav slightly down and fade it out */
 .nav-container.nav-hidden {
     transform: translateX(-50%) translateY(32px);
     opacity: 0;
@@ -622,6 +622,7 @@ footer {
     background-position: center;
     background-size: cover;
     margin-bottom: 50px;
+    background-attachment: fixed;
 }
 
 .banner .container {
@@ -680,4 +681,24 @@ footer {
 
 .banner .container p a:hover {
     color: var(--fade-accent);
-}   
+}  
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(15px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    cursor: url('../images/others/cursor-close.svg') 16 16, not-allowed;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+

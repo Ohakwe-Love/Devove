@@ -1,0 +1,11 @@
+.projects-wrapper .section-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: orange;
+
+    .section-header-col:nth-child(1) {
+        max-width: 700px;
+    }
+}

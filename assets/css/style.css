@@ -413,6 +413,8 @@
     height: 30px;
     position: relative;
     z-index: 2;
+    /* fill: white; */
+    stroke: red !important;
 }
 
 .icon-glow {
@@ -446,10 +448,6 @@
 @media (max-width: 900px) {
     .skills-grid {
         grid-template-columns: 1fr 1fr;
-    }
-
-    .section-header {
-        margin-bottom: 3rem;
     }
 }
 
@@ -584,7 +582,7 @@
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
 
-    .project-img {
+    .project-img-con {
         width: 100%;
         height: 260px;
         position: relative;
@@ -604,7 +602,7 @@
             transition: 0.5s ease-in-out;
         }
 
-        img {
+        .project-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -807,8 +805,8 @@
         transform: translateX(100%);
     }
 
-    .project-img {
-        img {
+    .project-img-con {
+        .project-img {
             transform: scale(1.2);
         }
 
@@ -830,36 +828,50 @@
 }
 
 .project_lightbox {
-    width: 100%;
-    height: 100vh;
-    display: none;
+    width: 80%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    backdrop-filter: blur(15px);
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
     z-index: 999;
+    transition: 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+
+    .lightbox-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.project_lightbox.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 .project_lightbox .lightbox_img {
-    max-width: 80%;
+    width: 100%;
     max-height: 70vh;
     display: block;
 }
 
 .project_lightbox .lightbox_controls {
-    width: 30%;
-    height: 100px;
-    margin-top: 20px;
+    gap: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .project_lightbox .lightbox_controls span {
-    width: 32%;
+    width: 50px;
     height: 50px;
     background: var(--background-3);
     display: flex;
@@ -892,7 +904,7 @@
 
 @media (max-width: 1199px) {
     .project-card {
-        .project-img {
+        .project-img-con {
             .project-actions .action-btn {
                 transform: translateX(0);
             }
@@ -911,10 +923,6 @@
         max-width: 100%;
         max-height: 70vh;
         display: block;
-    }
-
-    .project_lightbox .lightbox_controls {
-        width: 75%;
     }
 }
 
