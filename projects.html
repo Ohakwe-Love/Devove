@@ -15,11 +15,64 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/projects.css">
 
+    <style>
+        .loaderDiv {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 99999;
+            background-color: var(--card-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loader {
+            width: 50px;
+            aspect-ratio: 1;
+            display: grid;
+            border: 4px solid #0000;
+            border-radius: 50%;
+            border-right-color: var(--orange-primary);
+            animation: l15 1s infinite linear;
+        }
+
+        .loader::before,
+        .loader::after {
+            content: "";
+            grid-area: 1/1;
+            margin: 2px;
+            border: inherit;
+            border-radius: 50%;
+            animation: l15 2s infinite;
+        }
+
+        .loader::after {
+            margin: 8px;
+            animation-duration: 3s;
+        }
+
+        @keyframes l15 {
+            100% {
+                transform: rotate(1turn)
+            }
+        }
+    </style>
+
     <!-- scripts -->
     <script src="assets/js/script.js" defer></script>
 </head>
 
 <body>
+
+    <!-- preloader  -->
+    <div class="loaderDiv">
+        <div class="loader"></div>
+    </div>
     <main>
         <!-- navigation -->
         <div id="nav-container" class="nav-container">
@@ -139,7 +192,7 @@
                         </div>
 
                         <h2 class="section-heading">
-                            
+                            Project Showcase
                         </h2>
 
                         <p class="section-subtitle"> Showcasing my
@@ -149,9 +202,198 @@
                             design.</p>
                     </div>
                 </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="card-shine"></div>
+                        <div class="project-img-con">
+                            <img src="assets/images/projects/1.png" alt="" class="project-img">
+                            <!-- Action Buttons -->
+                            <div class="project-actions">
+                                <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                        <path fill-rule="evenodd"
+                                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                </a>
+
+                                <button class="action-btn quickview-btn" title="Quick View">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path
+                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-specs">
+                                <div class="project-badge-con">
+                                    <span class="project-badge dynamic">dynamic</span>
+                                    <!-- <span class="project-badge static">static</span> -->
+                                </div>
+                                <div class="project-status-con">
+                                    <div class="status-badge live">
+                                        <span class="status-dot"></span>
+                                        <span>live</span>
+                                    </div>
+                                    <!-- <div class="status-badge in-progress">
+                                        <span class="status-dot"></span>
+                                        <span>in progress</span>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <h3 class="project-title">Frontend Development</h3>
+                            <p class="project-description">Building responsive, performant interfaces with modern
+                                frameworks
+                                and best practices in web standards.</p>
+                            <div class="project-stacks">
+                                <span class="project-stack">React</span>
+                                <span class="project-stack">TypeScript</span>
+                                <span class="project-stack">Next.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-shine"></div>
+                        <div class="project-img-con">
+                            <img src="assets/images/projects/2.png" alt="" class="project-img">
+
+                            <!-- Action Buttons -->
+                            <div class="project-actions">
+                                <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                        <path fill-rule="evenodd"
+                                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                </a>
+
+                                <button class="action-btn quickview-btn" title="Quick View">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path
+                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-specs">
+                                <div class="project-badge-con">
+                                    <span class="project-badge dynamic">dynamic</span>
+                                    <!-- <span class="project-badge static">static</span> -->
+                                </div>
+                                <div class="project-status-con">
+                                    <div class="status-badge live">
+                                        <span class="status-dot"></span>
+                                        <span>live</span>
+                                    </div>
+                                    <!-- <div class="status-badge in-progress">
+                                        <span class="status-dot"></span>
+                                        <span>in progress</span>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <h3 class="project-title">Frontend Development</h3>
+                            <p class="project-description">Building responsive, performant interfaces with modern
+                                frameworks
+                                and best practices in web standards.</p>
+                            <div class="project-stacks">
+                                <span class="project-stack">React</span>
+                                <span class="project-stack">TypeScript</span>
+                                <span class="project-stack">Next.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-shine"></div>
+                        <div class="project-img-con">
+                            <img src="assets/images/projects/3.png" alt="" class="project-img">
+
+                            <!-- Action Buttons -->
+                            <div class="project-actions">
+                                <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                        <path fill-rule="evenodd"
+                                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                </a>
+
+                                <button class="action-btn quickview-btn" title="Quick View">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path
+                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-specs">
+                                <div class="project-badge-con">
+                                    <span class="project-badge dynamic">dynamic</span>
+                                    <!-- <span class="project-badge static">static</span> -->
+                                </div>
+                                <div class="project-status-con">
+                                    <div class="status-badge live">
+                                        <span class="status-dot"></span>
+                                        <span>live</span>
+                                    </div>
+                                    <!-- <div class="status-badge in-progress">
+                                        <span class="status-dot"></span>
+                                        <span>in progress</span>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <h3 class="project-title">Frontend Development</h3>
+                            <p class="project-description">Building responsive, performant interfaces with modern
+                                frameworks
+                                and best practices in web standards.</p>
+                            <div class="project-stacks">
+                                <span class="project-stack">React</span>
+                                <span class="project-stack">TypeScript</span>
+                                <span class="project-stack">Next.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="load-more">Load more</button>
+
+                <div class="" id="projects-skeleton">
+                    <div class="project-card skeleton">
+                        <div class="skeleton-img"></div>
+                        <div class="skeleton-title"></div>
+                        <div class="skeleton-price"></div>
+                    </div>
+                    <div class="project-card skeleton">
+                        <div class="skeleton-img"></div>
+                        <div class="skeleton-title"></div>
+                        <div class="skeleton-price"></div>
+                    </div>
+                    <div class="project-card skeleton">
+                        <div class="skeleton-img"></div>
+                        <div class="skeleton-title"></div>
+                        <div class="skeleton-price"></div>
+                    </div>
+                </div>
             </div>
         </section>
-
     </main>
 
     <!-- footer -->

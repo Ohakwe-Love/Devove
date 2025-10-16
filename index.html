@@ -15,15 +15,66 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <style>
+        .loaderDiv {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 99999;
+            background-color: var(--background-2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loader {
+            width: 50px;
+            aspect-ratio: 1;
+            display: grid;
+            border: 4px solid var(--primary);
+            border-radius: 50%;
+            border-right-color: transparent;
+            animation: l15 1s infinite linear;
+        }
+
+        .loader::before,
+        .loader::after {
+            content: "";
+            grid-area: 1/1;
+            margin: 2px;
+            border: inherit;
+            border-radius: 50%;
+            animation: l15 2s infinite;
+        }
+
+        .loader::after {
+            margin: 8px;
+            animation-duration: 3s;
+        }
+
+        @keyframes l15 {
+            100% {
+                transform: rotate(1turn)
+            }
+        }
+    </style>
 
     <!-- js -->
     <script src="assets/js/script.js" defer></script>
     <script src="assets/js/projects.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
 
-    <div class="preloader" id="preloader"></div>
+    <!-- preloader  -->
+    <div class="loaderDiv">
+        <div class="loader"></div>
+    </div>
 
     <!-- header -->
     <header>
@@ -297,6 +348,9 @@
                         </div>
 
                         <h2 class="section-heading">Tech stacks I'm familiar with</h2>
+                        <p class="section-subtitle">Crafting exceptional digital experiences through cutting-edge
+                            technologies
+                            and design principles</p>
                     </div>
                 </div>
 
@@ -433,10 +487,9 @@
                             </span>
                             Expertise
                         </div>
-                        <h2 class="section-heading">Technical Mastery</h2>
-                        <p class="section-subtitle">Crafting exceptional digital experiences through cutting-edge
-                            technologies
-                            and design principles</p>
+                        <h2 class="section-heading">Professional Values</h2>
+                        <p class="section-subtitle">Key interpersonal abilities that support efficient, secure, and
+                            results-driven work.</p>
                     </div>
                 </div>
 
@@ -444,51 +497,9 @@
                     <div class="skill-card">
                         <div class="skill-icon">
                             <div class="icon-glow"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img"
-                                aria-labelledby="lightbulb-title" class="icon-lightbulb">
-                                <title id="lightbulb-title">Problem Solving</title>
-
-                                <!-- Lightbulb outline -->
-                                <path d="M32 14
-           c-6 0 -10 4.5 -10 10
-           0 3.5 1.8 6.5 4.5 8.3
-           1.1 0.8 1.8 2.3 1.8 3.7
-           v3.5
-           h8.4
-           v-3.5
-           c0-1.4.7-2.9 1.8-3.7
-           2.7-1.8 4.5-4.8 4.5-8.3
-           0-5.5 -4-10 -10-10z" fill="none" stroke="url(#grad2)" stroke-width="2.4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-
-                                <!-- Fixed bulb base -->
-                                <g stroke="url(#grad2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    fill="none">
-                                    <!-- main base -->
-                                    <path d="M27 38 h10 v3 h-10 z" />
-                                    <!-- screw lines -->
-                                    <line x1="27" y1="41.5" x2="37" y2="41.5" />
-                                    <line x1="27" y1="44" x2="37" y2="44" />
-                                    <!-- rounded end -->
-                                    <path d="M28 46 h8 q1 0 1 1 v1 h-10 v-1 q0-1 1-1z" />
-                                </g>
-
-                                <!-- Light rays -->
-                                <g stroke="url(#grad2)" stroke-width="1.6" stroke-linecap="round">
-                                    <line x1="32" y1="4" x2="32" y2="10" />
-                                    <line x1="26" y1="5" x2="27" y2="10" />
-                                    <line x1="38" y1="5" x2="37" y2="10" />
-                                    <line x1="20" y1="8" x2="23" y2="12" />
-                                    <line x1="44" y1="8" x2="41" y2="12" />
-                                    <line x1="16" y1="14" x2="20" y2="16" />
-                                    <line x1="48" y1="14" x2="44" y2="16" />
-                                    <line x1="14" y1="20" x2="19" y2="21" />
-                                    <line x1="50" y1="20" x2="45" y2="21" />
-                                </g>
-                            </svg>
-
+                            <img src="assets/images/skills/problem-solving.png" alt="">
                         </div>
-                        <h3 class="skill-title">Problem-Solving & Debugging</h3>
+                        <h3 class="skill-title">Problem-Solving</h3>
                         <p class="skill-description">Approach complex technical challenges with a structured, logical,
                             and systematic mindset.</p>
                     </div>
@@ -496,20 +507,9 @@
                     <div class="skill-card">
                         <div class="skill-icon">
                             <div class="icon-glow"></div>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="url(#grad3)" />
-                                <circle cx="9" cy="7" r="4" stroke="url(#grad3)" />
-                                <path d="M23 21v-2a4 4 0 00-3-3.87m-2-1.03V15" stroke="url(#grad3)" />
-                                <path d="M16 3.13a4 4 0 010 7.75" stroke="url(#grad3)" />
-                                <defs>
-                                    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:rgb(234,3,234);stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:rgb(0,140,255);stop-opacity:1" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
+                            <img src="assets/images/skills/team.png" alt="">
                         </div>
-                        <h3 class="skill-title">Collaboration & Code Review</h3>
+                        <h3 class="skill-title">Collaboration</h3>
                         <p class="skill-description">Work effectively in a team, provide constructive code feedback, and
                             utilize Git flow smoothly.</p>
                     </div>
@@ -517,77 +517,9 @@
                     <div class="skill-card">
                         <div class="skill-icon">
                             <div class="icon-glow"></div>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path
-                                    d="M21.5 6.5l-2.48 2.48A7 7 0 0012 5V2L8.5 5.5 12 9V7a5 5 0 014.28 2.5l-1.38 1.38A7 7 0 0012 19v3l3.5-3.5-3.5-3.5V17a5 5 0 01-4.28-2.5l1.38-1.38A7 7 0 0012 5.02"
-                                    stroke="url(#grad4)" />
-                                <defs>
-                                    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:rgb(234,3,234);stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:rgb(0,140,255);stop-opacity:1" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
+                            <img src="assets/images/skills/user-focus.png" alt="">
                         </div>
-                        <h3 class="skill-title">Adaptability & Learning</h3>
-                        <p class="skill-description">Quickly master new frameworks, adapt to changing project
-                            requirements, and learn continuously.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <div class="icon-glow"></div>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10" stroke="url(#grad5)" />
-                                <polyline points="12 6 12 12 16 14" stroke="url(#grad5)" />
-                                <defs>
-                                    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:rgb(234,3,234);stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:rgb(0,140,255);stop-opacity:1" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <h3 class="skill-title">Time Management & Prioritization</h3>
-                        <p class="skill-description">Accurately estimate development time, prioritize competing tasks,
-                            and consistently meet deadlines.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <div class="icon-glow"></div>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="url(#grad6)" />
-                                <circle cx="12" cy="12" r="3" stroke="url(#grad6)" />
-                                <defs>
-                                    <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:rgb(234,3,234);stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:rgb(0,140,255);stop-opacity:1" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <h3 class="skill-title">Attention to Detail (Meticulousness)</h3>
-                        <p class="skill-description">Write clean, tested, error-free code and catch minor flaws in logic
-                            or user interface.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <div class="icon-glow"></div>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path
-                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.15C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-                                    stroke="url(#grad7)" />
-                                <defs>
-                                    <linearGradient id="grad7" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:rgb(234,3,234);stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:rgb(0,140,255);stop-opacity:1" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <h3 class="skill-title">Empathy & User Focus</h3>
+                        <h3 class="skill-title">User Focus</h3>
                         <p class="skill-description">Understand user needs, focusing on accessibility, performance, and
                             overall usability.</p>
                     </div>
@@ -595,22 +527,13 @@
                     <div class="skill-card">
                         <div class="skill-icon">
                             <div class="icon-glow"></div>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 11h.01M19 12h.01M5 12h.01M12 2a10 10 0 00-4 18.33V22l1-1h6a10 10 0 000-20z"
-                                    stroke="url(#grad8)" />
-                                <path d="M13.78 13.78a2 2 0 10-2.83-2.83 2 2 0 002.83 2.83z" stroke="url(#grad8)" />
-                                <defs>
-                                    <linearGradient id="grad8" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:rgb(234,3,234);stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:rgb(0,140,255);stop-opacity:1" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
+                            <img src="assets/images/skills/security.png" alt="">
                         </div>
-                        <h3 class="skill-title">Critical Thinking & Analysis</h3>
-                        <p class="skill-description">Evaluate different technical paths and analyze the long-term impact
-                            of design decisions.</p>
+                        <h3 class="skill-title">Security</h3>
+                        <p class="skill-description">Ensuring data integrity and safeguarding applications through
+                            proactive measures.</p>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -1128,13 +1051,15 @@
     </footer>
     <!-- end -->
 
-    <!-- <script>
-        // preloader 
-        window.addEventListener("load", function () {
-            const preloader = document.getElementById("preloader");
-            preloader.style.display = "none";
-        });
-    </script> -->
+    <script>
+        // Preloader
+        const loader = document.querySelector('.loaderDiv')
+        
+        window.onload = function () {
+            loader.style.display = 'none'
+            body.style.overflow = 'hidden'
+        }
+    </script>
 </body>
 
 </html>
