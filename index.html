@@ -115,20 +115,20 @@
         <section class="hero-wrapper">
             <div class="container">
                 <div class="hero-content">
-                    <div class="status-badge">
+                    <div class="status-badge" data-aos="fade-up" data-aos-delay="500">
                         <span class="status-dot"></span>
                         <span>Available for projects</span>
                     </div>
 
-                    <h1>Hi, I'm Lovely. <br>
+                    <h1 class="slide-in-up">Hi, I'm Lovely. <br>
                         A software engineer.</h1>
 
-                    <p class="description">
+                    <p class="description slide-in-up">
                         Mainly working in the JavaScript ecosystem, I'm a dedicated problem-solver who thrives on
                         learning and building.
                     </p>
 
-                    <div class="cta-section">
+                    <div class="cta-section slide-in-up">
                         <div class="board">
                             <div class="key-position">
                                 <a aria-label="Github" class="key" data-key="Github" target="_blank" href=""> <svg
@@ -259,7 +259,7 @@
             <div class="container">
                 <div class="section-header">
                     <div class="section-header-col">
-                        <div class="section-label">
+                        <div class="section-label slide-in-left">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person"
                                     viewBox="0 0 16 16">
@@ -271,10 +271,10 @@
                             About
                         </div>
 
-                        <h2 class="section-heading">Learning, Building, and Documenting</h2>
+                        <h2 class="section-heading slide-in-up">Learning, Building, and Documenting</h2>
                     </div>
                     <div class="section-header-col">
-                        <a href="" class="primary-btn animated-border">
+                        <a href="" class="primary-btn animated-border slide-in-down">
                             Contact Me
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -327,7 +327,7 @@
                 <div class="section-header">
 
                     <div class="section-header-col">
-                        <div class="section-label">
+                        <div class="section-label slide-in-down">
                             <span>
                                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
                                     viewBox="0 0 256 256" class="size-4">
@@ -347,8 +347,8 @@
                             Tech Stacks
                         </div>
 
-                        <h2 class="section-heading">Tech stacks I'm familiar with</h2>
-                        <p class="section-subtitle">Crafting exceptional digital experiences through cutting-edge
+                        <h2 class="section-heading slide-in-left">Tech stacks I'm familiar with</h2>
+                        <p class="section-subtitle slide-in-up">Crafting exceptional digital experiences through cutting-edge
                             technologies
                             and design principles</p>
                     </div>
@@ -892,13 +892,13 @@
         <div class="overlay"></div>
         <!-- end -->
 
-        <!-- connect -->
-        <section class="connect">
+        <!-- content -->
+        <section class="content">
             <div class="container">
-                <div class="connect-container">
-                    <div class="connect-content">
-                        <h2 class="connect-title">Ready to Build Something Extraordinary?</h2>
-                        <p class="connect-description">Let's discuss how we can transform your vision into a digital
+                <div class="content-container">
+                    <div class="content-details">
+                        <h2 class="content-title">Ready to Build Something Extraordinary?</h2>
+                        <p class="content-description">Let's discuss how we can transform your vision into a digital
                             masterpiece
                             that drives results and exceeds expectations.</p>
                         <a href="contact.html" target="_blank" class="primary-btn animated-border">
@@ -1054,7 +1054,7 @@
     <script>
         // Preloader
         const loader = document.querySelector('.loaderDiv')
-        
+
         window.onload = function () {
             loader.style.display = 'none'
             body.style.overflow = 'hidden'
