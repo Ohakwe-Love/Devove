@@ -319,22 +319,20 @@
 }
 
 /* CSS-masked stack icons (use when you want the SVG shape filled by CSS gradients) */
-.stack-icon {
+/* .stack-icon {
     width: 50px;
     height: 50px;
     display: inline-block;
     background: linear-gradient(135deg, var(--accent) 0%, var(--contrast) 100%);
     background-size: 200% 200%;
     border-radius: 8px;
-}
+} */
 
-/* React-specific: use the react.svg file as the mask. Adjust the URL path if necessary. */
-.stack-react {
-    /* prefer modern mask with repeated fallback to -webkit-mask for older browsers */
+/* .stack-react {
     mask: url("../images/stacks/react.svg") no-repeat center / contain;
     -webkit-mask: url("../images/stacks/react.svg") no-repeat center / contain;
     background: linear-gradient(90deg, #61dafb 0%, #7f50ff 100%);
-}
+} */
 
 /* Optional hover animation to shift the gradient */
 .stack-item:hover .stack-icon {
