@@ -153,7 +153,6 @@ header .container {
 
     .logo {
         display: inline-block;
-        /* background-color: orange; */
         width: 200px;
 
         svg {
@@ -239,6 +238,12 @@ header .container {
         background: linear-gradient(90deg, rgba(255, 107, 107, 0.7), rgba(101, 126, 255, 0.7));
         filter: blur(6px);
         opacity: 0.9;
+    }
+}
+
+@media (max-width: 600px) {
+    .view-resume {
+        display: none;
     }
 }
 
