@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Redirect requests to specific PHP files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Example: /contact → contact.php
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
