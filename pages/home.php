@@ -1,22 +1,23 @@
 <!-- main container -->
 <main>
+    <!-- hero -->
     <section class="hero-wrapper">
         <div class="container">
             <div class="hero-content">
-                <div class="status-badge" data-aos="fade-up" data-aos-delay="500">
+                <div class="status-badge" data-aos="fade-right" data-aos-duration="1000">
                     <span class="status-dot"></span>
                     <span>Available for projects</span>
                 </div>
 
-                <h1 class="slide-in-up">Hi, I'm Lovely.
+                <h1 class="slide-in-up" data-aos="fade-up" data-aos-duration="1500">Hi, I'm Ohakwe Love.
                     A software engineer.</h1>
 
-                <p class="description slide-in-up">
-                    Turning concepts into fast, responsive, and scalable web applications with clean code and
-                    creative design. I'm a dedicated problem-solver who thrives on learning and building.
+                <p class="description slide-in-up" data-aos="zoom-in" data-aos-duration="2000">
+                    Designing and developing digital experiences that speak through simplicity and precision. I’m
+                    endlessly curious about how things work, and even more fascinated by how they feel when they do.
                 </p>
 
-                <div class="cta-section slide-in-up">
+                <div class="cta-section slide-in-up" data-aos="fade-up" data-aos-duration="2500">
                     <div class="board">
                         <div class="key-position">
                             <a aria-label="Github" class="key" data-key="Github" target="_blank"
@@ -48,7 +49,7 @@
                         </div>
 
                         <div class="key-position">
-                            <a aria-label="Resume" class="key" data-key="Resume" target="_blank" href="my_cv.html">
+                            <a aria-label="Resume" class="key" data-key="Resume" target="_blank" href="my_cv">
                                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
                                     viewBox="0 0 24 24" data-astro-cid-wyj6lz6x="true">
                                     <path fill="none" stroke="currentColor" stroke-linecap="round"
@@ -75,25 +76,22 @@
                         </div>
                     </div>
 
-                    <div class="key-position"> <a id="cta-hero-btn" href="contact.html" data-block="center"
+                    <div class="key-position"> <a id="cta-hero-btn" href="contact" data-block="center"
                             class="key call-to-action-btn peer">
                             <p class="border-line call-to-action-content">Explore more</p>
                         </a> </div>
                 </div>
             </div>
-
-            <div class="hero-app-illustration">
-
-            </div>
         </div>
     </section>
+    <!-- end -->
 
     <!-- about -->
-    <section>
+    <section id="about">
         <div class="container">
             <div class="section-header">
                 <div class="section-header-col">
-                    <div class="section-label slide-in-left">
+                    <div class="section-label slide-in-left" data-aos="fade-up" data-aos-duration="1000">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person"
                                 viewBox="0 0 16 16">
@@ -105,10 +103,12 @@
                         About
                     </div>
 
-                    <h2 class="section-heading slide-in-up">Learning, Building, and Documenting</h2>
+                    <h2 class="section-heading slide-in-up" data-aos="fade-up" data-aos-duration="2000">Learning,
+                        Building, and Documenting</h2>
                 </div>
                 <div class="section-header-col">
-                    <a href="contact.html" class="primary-btn animated-border slide-in-down">
+                    <a href="contact" class="primary-btn animated-border" data-aos="zoom-in"
+                        data-aos-duration="2000">
                         Contact Me
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -123,21 +123,22 @@
 
             <div class="about-row">
                 <div class="about-col">
-                    <h3>A journey in crafting engaging experiences and exploring new horizons</h3>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Driven by curiosity and the art of creating
+                        meaningful experiences</h3>
 
-                    <p>
-                        I have started my career as an IoT engineer, diving deep into the world of interconnected
-                        devices and cutting-edge technology. However, my passion for crafting meaningful and
-                        engaging user experiences led me to switch careers and pursue product design.
+                    <p data-aos="fade-up" data-aos-duration="2500">
+                        A journey fueled by curiosity and the desire to understand how things work.
+                        I began exploring technology out of a deep fascination with how ideas come to life through
+                        code and design. What started as a simple curiosity grew into a passion for building
+                        thoughtful, engaging digital experiences that connect people and purpose.
                     </p>
 
-                    <p>
-                        When I'm not immersed in design projects, you'll likely find me exploring new cities with my
-                        camera, capturing the beauty of everyday life. Balancing work with personal adventures keeps
-                        me inspired and fuels my creativity.
+                    <p data-aos="fade-up" data-aos-duration="3000">
+                        When I’m not creating, I’m often learning something new or observing the little details that
+                        make everyday life inspiring, because for me, creativity starts with curiosity.
                     </p>
 
-                    <a href="#projects" class="projects-link">
+                    <a href="#projects" class="projects-link" data-aos="fade-up" data-aos-duration="3500">
                         <i class="border-line">Discover more projects</i>
                         <span>
                             <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,20 +149,20 @@
                         </span>
                     </a>
                 </div>
-                <div class="about-col">
-                    <img src="assets/images/img2.jpeg" alt="Lovely">
+                <div class="about-col" data-aos="zoom-in" data-aos-duration="2000">
+                    <img src="assets/images/me/me.jpg" alt="Lovely">
                 </div>
             </div>
         </div>
     </section>
+    <!-- end -->
 
     <!-- stacks -->
-    <section class="stacks">
+    <section class="stacks" id="stacks">
         <div class="container">
             <div class="section-header">
-
                 <div class="section-header-col">
-                    <div class="section-label slide-in-down">
+                    <div class="section-label" data-aos="zoom-out-down" data-aos-duration="2000">
                         <span>
                             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
                                 viewBox="0 0 256 256" class="size-4">
@@ -181,8 +182,10 @@
                         Tech Stacks
                     </div>
 
-                    <h2 class="section-heading slide-in-left">Tech stacks I'm familiar with</h2>
-                    <p class="section-subtitle slide-in-up">Crafting exceptional digital experiences through
+                    <h2 class="section-heading" data-aos="zoom-in" data-aos-duration="3000">Tech stacks I'm familiar
+                        with</h2>
+                    <p class="section-subtitle" data-aos="zoom-out-up" data-aos-duration="3000">Crafting exceptional
+                        digital experiences through
                         cutting-edge
                         technologies
                         and design principles</p>
@@ -233,17 +236,6 @@
                     <div class="stack-item">
                         <img src="assets/images/stacks/vite.svg" alt="vite">
                     </div>
-                    <div class="stack-item">
-                        <img src="assets/images/stacks/android.svg" alt="android">
-                    </div>
-                    <div class="stack-item">
-                        <img src="assets/images/stacks/android.svg" alt="android">
-                    </div>
-                    <div class="stack-item">
-                        <img src="assets/images/stacks/android.svg" alt="android">
-                    </div>
-
-
 
                     <div class="stack-item">
                         <img src="assets/images/stacks/android.svg" alt="android">
@@ -287,27 +279,18 @@
                     <div class="stack-item">
                         <img src="assets/images/stacks/vite.svg" alt="vite">
                     </div>
-                    <div class="stack-item">
-                        <img src="assets/images/stacks/android.svg" alt="android">
-                    </div>
-                    <div class="stack-item">
-                        <img src="assets/images/stacks/android.svg" alt="android">
-                    </div>
-                    <div class="stack-item">
-                        <img src="assets/images/stacks/android.svg" alt="android">
-                    </div>
-
                 </div>
             </div>
         </div>
     </section>
+    <!-- end -->
 
     <!-- skills -->
-    <div class="skills-container">
+    <section class="skills-container" id="skills">
         <div class="container">
             <div class="section-header">
                 <div class="section-header-col">
-                    <div class="section-label">
+                    <div class="section-label" data-aos="zoom-out-down" data-aos-duration="2000">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 id="Person-Play-Fill--Streamline-Outlined-Fill-Material">
@@ -318,63 +301,74 @@
                         </span>
                         Expertise
                     </div>
-                    <h2 class="section-heading">Professional Values</h2>
-                    <p class="section-subtitle">Key interpersonal abilities that support efficient, secure, and
+                    <h2 class="section-heading" data-aos="zoom-in-right" data-aos-duration="3000"
+                        data-aos-delay="100">Professional Values</h2>
+                    <p class="section-subtitle" data-aos="zoom-out-up" data-aos-duration="3000"
+                        data-aos-delay="100">Key interpersonal abilities that support efficient, secure, and
                         results-driven work.</p>
                 </div>
             </div>
 
             <div class="skills-grid">
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="100">
                     <div class="skill-icon">
                         <div class="icon-glow"></div>
                         <img src="assets/images/skills/problem-solving.png" alt="">
                     </div>
                     <h3 class="skill-title">Problem-Solving</h3>
-                    <p class="skill-description">Approach complex technical challenges with a structured, logical,
-                        and systematic mindset.</p>
+                    <p class="skill-description">
+                        Approach complex technical challenges with a structured, logical,
+                        and systematic mindset.
+                    </p>
                 </div>
 
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="500">
                     <div class="skill-icon">
                         <div class="icon-glow"></div>
                         <img src="assets/images/skills/team.png" alt="">
                     </div>
                     <h3 class="skill-title">Collaboration</h3>
-                    <p class="skill-description">Work effectively in a team, provide constructive code feedback, and
-                        utilize Git flow smoothly.</p>
+                    <p class="skill-description">
+                        Work effectively in a team, provide constructive code feedback, and
+                        utilize Git flow smoothly.
+                    </p>
                 </div>
 
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="1000">
                     <div class="skill-icon">
                         <div class="icon-glow"></div>
                         <img src="assets/images/skills/user-focus.png" alt="">
                     </div>
                     <h3 class="skill-title">User Focus</h3>
-                    <p class="skill-description">Understand user needs, focusing on accessibility, performance, and
-                        overall usability.</p>
+                    <p class="skill-description">
+                        Understand user needs, focusing on accessibility, performance, and
+                        overall usability.
+                    </p>
                 </div>
 
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="1500">
                     <div class="skill-icon">
                         <div class="icon-glow"></div>
                         <img src="assets/images/skills/security.png" alt="">
                     </div>
                     <h3 class="skill-title">Security</h3>
-                    <p class="skill-description">Ensuring data integrity and safeguarding applications through
-                        proactive measures.</p>
+                    <p class="skill-description">
+                        Ensuring data integrity and safeguarding applications through
+                        proactive measures.
+                    </p>
                 </div>
 
             </div>
         </div>
-    </div>
+    </section>
+    <!-- end -->
 
     <!-- Services Section -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="section-header">
                 <div class="section-header-col">
-                    <div class="section-label">
+                    <div class="section-label" data-aos="fade-right" data-aos-duration="2000">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                 <path fill="currentColor" fill-rule="evenodd"
@@ -391,14 +385,17 @@
                         Services
                     </div>
 
-                    <h2 class="section-heading">Elevate Your Digital Presence</h2>
+                    <h2 class="section-heading" data-aos="zoom-in" data-aos-duration="3000">Elevate Your Digital
+                        Presence</h2>
 
-                    <p class="section-subtitle">Offering a range of services to bring your ideas to life</p>
+                    <p class="section-subtitle" data-aos="fade-right" data-aos-duration="3000">Offering a range of
+                        services to bring your ideas to life</p>
                 </div>
             </div>
 
             <div class="services-grid">
-                <div class="service-card" data-service="1">
+                <div class="service-card" data-service="1" data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-delay="100">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -417,7 +414,8 @@
                     </ul>
                 </div>
 
-                <div class="service-card" data-service="4">
+                <div class="service-card" data-service="4" data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-delay="800">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -441,7 +439,8 @@
                     </ul>
                 </div>
 
-                <div class="service-card" data-service="6">
+                <div class="service-card" data-service="6" data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-delay="100">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -459,7 +458,8 @@
                     </ul>
                 </div>
 
-                <div class="service-card" data-service="8">
+                <div class="service-card" data-service="8" data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-delay="800">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -485,11 +485,11 @@
     </section>
 
     <!-- projects -->
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <div class="section-header">
                 <div class="section-header-col">
-                    <div class="section-label">
+                    <div class="section-label" data-aos="fade-right" data-aos-duration="2000">
                         <span>
                             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
                                 class="size-5">
@@ -501,15 +501,18 @@
                         Projects
                     </div>
 
-                    <h2 class="section-heading">Explore a curated selection of my recent projects</h2>
+                    <h2 class="section-heading" data-aos="zoom-in" data-aos-duration="3000">Explore a curated
+                        selection of my recent projects</h2>
 
-                    <p class="section-subtitle">Each project marks a step forward, showcasing my growth and journey
+                    <p class="section-subtitle" data-aos="fade-right" data-aos-duration="3000">Each project marks a
+                        step forward, showcasing my growth and journey
                         as a developer.
                         Explore how I’ve tackled challenges and built solutions along the way.</p>
                 </div>
 
                 <div class="section-header-col">
-                    <a href="projects.html" target="_blank" class="primary-btn animated-border">
+                    <a href="projects" target="_blank" class="primary-btn animated-border" data-aos="zoom-in"
+                        data-aos-duration="2000">
                         Explore Projects
 
                         <span>
@@ -523,13 +526,13 @@
                 </div>
             </div>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
                     <div class="card-shine"></div>
                     <div class="project-img-con">
                         <img src="assets/images/projects/1.png" alt="" class="project-img">
                         <!-- Action Buttons -->
                         <div class="project-actions">
-                            <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                            <a href="javascrip:void(0)" class="action-btn live-preview-btn" title="Live Preview">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -554,38 +557,36 @@
                         <div class="project-specs">
                             <div class="project-badge-con">
                                 <span class="project-badge dynamic">dynamic</span>
-                                <!-- <span class="project-badge static">static</span> -->
                             </div>
                             <div class="project-status-con">
                                 <div class="status-badge live">
                                     <span class="status-dot"></span>
                                     <span>live</span>
                                 </div>
-                                <!-- <div class="status-badge in-progress">
-                                        <span class="status-dot"></span>
-                                        <span>in progress</span>
-                                    </div> -->
+                               
                             </div>
                         </div>
-                        <h3 class="project-title">Frontend Development</h3>
-                        <p class="project-description">Building responsive, performant interfaces with modern
-                            frameworks
-                            and best practices in web standards.</p>
+                        <h3 class="project-title">Urbanist Online store</h3>
+                        <p class="project-description">Urbanist is a modern and scalable e-commerce website designed
+                            to offer a seamless shopping...</p>
                         <div class="project-stacks">
-                            <span class="project-stack">React</span>
-                            <span class="project-stack">TypeScript</span>
-                            <span class="project-stack">Next.js</span>
+                            <span class="project-stack">HTMl</span>
+                            <span class="project-stack">CSS</span>
+                            <span class="project-stack">JavaScript</span>
+                            <span class="project-stack">PHP</span>
+                            <span class="project-stack">Laravel</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+
+                <div class="project-card" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">
                     <div class="card-shine"></div>
                     <div class="project-img-con">
                         <img src="assets/images/projects/2.png" alt="" class="project-img">
 
                         <!-- Action Buttons -->
                         <div class="project-actions">
-                            <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                            <a href="javascrip:void(0)" class="action-btn live-preview-btn" title="Live Preview">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -618,30 +619,31 @@
                                     <span>live</span>
                                 </div>
                                 <!-- <div class="status-badge in-progress">
-                                        <span class="status-dot"></span>
-                                        <span>in progress</span>
-                                    </div> -->
+                                            <span class="status-dot"></span>
+                                            <span>in progress</span>
+                                        </div> -->
                             </div>
                         </div>
-                        <h3 class="project-title">Frontend Development</h3>
-                        <p class="project-description">Building responsive, performant interfaces with modern
-                            frameworks
-                            and best practices in web standards.</p>
+                        <h3 class="project-title">Listeo</h3>
+                        <p class="project-description">An all-in-one business entity designed for your convenience.
+                            Whether you need a place to stay, fitness coaching, event planning...</p>
                         <div class="project-stacks">
-                            <span class="project-stack">React</span>
-                            <span class="project-stack">TypeScript</span>
-                            <span class="project-stack">Next.js</span>
+                            <span class="project-stack">HTMl</span>
+                            <span class="project-stack">CSS</span>
+                            <span class="project-stack">JavaScript</span>
+                            <span class="project-stack">PHP</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+
+                <div class="project-card" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
                     <div class="card-shine"></div>
                     <div class="project-img-con">
                         <img src="assets/images/projects/3.png" alt="" class="project-img">
 
                         <!-- Action Buttons -->
                         <div class="project-actions">
-                            <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                            <a href="javascrip:void(0)" class="action-btn live-preview-btn" title="Live Preview">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -666,27 +668,22 @@
                         <div class="project-specs">
                             <div class="project-badge-con">
                                 <span class="project-badge dynamic">dynamic</span>
-                                <!-- <span class="project-badge static">static</span> -->
                             </div>
                             <div class="project-status-con">
                                 <div class="status-badge live">
                                     <span class="status-dot"></span>
                                     <span>live</span>
                                 </div>
-                                <!-- <div class="status-badge in-progress">
-                                        <span class="status-dot"></span>
-                                        <span>in progress</span>
-                                    </div> -->
                             </div>
                         </div>
-                        <h3 class="project-title">Frontend Development</h3>
-                        <p class="project-description">Building responsive, performant interfaces with modern
-                            frameworks
-                            and best practices in web standards.</p>
+                        <h3 class="project-title">FoodCrunch</h3>
+                        <p class="project-description">A sleek web experience for a tiny mobile restaurant,
+                            combining tasty visuals with smooth, responsive design...</p>
                         <div class="project-stacks">
-                            <span class="project-stack">React</span>
-                            <span class="project-stack">TypeScript</span>
-                            <span class="project-stack">Next.js</span>
+                            <span class="project-stack">HTMl</span>
+                            <span class="project-stack">CSS</span>
+                            <span class="project-stack">JavaScript</span>
+                            <span class="project-stack">PHP</span>
                         </div>
                     </div>
                 </div>
@@ -723,33 +720,11 @@
             </div>
         </div>
     </section>
-
-    <div class="overlay"></div>
     <!-- end -->
 
-    <!-- content -->
-    <section class="content">
-        <div class="container">
-            <div class="content-container">
-                <div class="content-details">
-                    <h2 class="content-title">Ready to Build Something Extraordinary?</h2>
-                    <p class="content-description">Let's discuss how we can transform your vision into a digital
-                        masterpiece
-                        that drives results and exceeds expectations.</p>
-                    <a href="contact.html" target="_blank" class="primary-btn animated-border">
-                        Contact Here
+    <div class="overlay"></div>
 
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- content -->
+    <?php include_once "components/connect.php" ?>
     <!-- end -->
 </main>

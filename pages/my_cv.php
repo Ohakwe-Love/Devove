@@ -1,33 +1,26 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- title -->
     <title>Lovely's Resume</title>
 
-    <!-- favicon -->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
-    <!-- css -->
     <link rel="stylesheet" href="assets/css/my_cv.css">
 
-    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
         rel="stylesheet">
 
-    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/ee0082ad61.js" crossorigin="anonymous"></script>
-
-
 </head>
 
-<body>
+<body> -->
     <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
 
     <main class="cv-container" id="cv-container">
@@ -41,8 +34,7 @@
                 <p><i class="fa-brands fa-linkedin"></i> <a
                         href="https://www.linkedin.com/in/love-ohakwe/">linkedin.com/in/love-ohakwe</a></p>
                 <p><i class="fa-brands fa-github"></i> <a
-                        href="https://github.com/LovelyMe-Nachi">github.com/LovelyMe-Nachi </a></p>
-                <p><i class="fa-solid fa-location-dot"></i> Open to relocation</p>
+                        href="https://github.com/Ohakwe-Love">github.com/Ohakwe-Love</a></p>
             </div>
         </div>
 
@@ -50,18 +42,20 @@
             <div class="section-title">Professional Summary</div>
             <div class="description">
                 <p>
-                    Dedicated and versatile Web Developer with proven experience in building responsive, dynamic, and
-                    user-friendly websites and web applications using technologies such as HTML, CSS, JavaScript, PHP,
-                    Laravel, and MySQL. Currently serving as a Web Development Tutor at Digital Dreams ICT Academy,
-                    where I train and mentor aspiring developers, delivering practical, project-based instruction to
-                    bridge the gap between theory and real-world application.
+                    dedicated and innovative Web Developer with proven experience in building responsive,
+                    high-performance
+                    websites and web applications using HTML, CSS, JavaScript, PHP, Laravel, and MySQL. I specialize in
+                    crafting
+                    clean, efficient, and scalable solutions that combine modern design with robust functionality.
                 </p>
 
                 <p>
-                    Adept at both independent and collaborative work environments, with strong problem-solving skills
-                    and a passion for clean code, performance optimization, and continuous learning. Committed to
-                    delivering high-quality solutions while empowering others through knowledge sharing and technical
-                    guidance.
+                    Driven by a passion for problem-solving, performance optimization, and digital security, I aim to
+                    create web
+                    experiences that not only deliver value but also make the online world a safer and more meaningful
+                    place.
+                    Committed to continuous growth, I strive to contribute to a better, more secure, and connected
+                    digital future.
                 </p>
             </div>
         </section>
@@ -95,30 +89,6 @@
                         performance.</li>
                 </ul>
             </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Mathematics Tutor</div>
-                        <div class="company">Solid Foundation </div>
-                    </div>
-                    <div class="date">2022 - 2024</div>
-                </div>
-                <div class="description">
-                    As a Mathematics Tutor, I provided personalized academic support to students, helping them build
-                    confidence and mastery in core mathematical concepts across various levels.
-                </div>
-                <ul>
-                    <li>Delivered one-on-one and group tutoring sessions covering topics such as algebra, geometry,
-                        trigonometry, and calculus.</li>
-                    <li>Assisted students in preparing for exams, solving problem sets, and understanding complex
-                        mathematical theories.</li>
-                    <li>Monitored progress and provided regular feedback to help students improve their performance and
-                        study habits.</li>
-                    <li>Encouraged critical thinking, logical reasoning, and independent problem-solving skills in all
-                        sessions.</li>
-                </ul>
-            </div>
         </section>
 
         <section class="cv_content">
@@ -139,7 +109,7 @@
                     <ul class="skill-list">
                         <li>PHP</li>
                         <li>Laravel</li>
-                        <!-- <li>Node JS</li> -->
+                        <li>MVC Architecture</li>
                     </ul>
                 </div>
                 <div class="skill-category">
@@ -180,31 +150,6 @@
             <div class="section-title">Key Projects</div>
 
             <div class="project">
-                <div class="project-name">E-Commerce Platform Redesign</div>
-                <div class="project-tech">Laravel, MySQL, JavaScript, CSS, HTML</div>
-                <div class="description">
-                    Urbanist is a modern and scalable e-commerce website designed to offer a seamless shopping
-                    experience for furniture and home decoration products. Built using Laravel, the platform supports
-                    both guest and authenticated user experiences, with robust features for product browsing, order
-                    management, and customer interaction.
-                </div>
-                <div>
-                    <h4>Features</h4>
-                    <ul>
-                        <li>Custom user authentication (registration, login, password reset)</li>
-                        <li>Product catalog with categories, filters, and search functionality</li>
-                        <li>Cart and wishlist systems with session-based support for guests</li>
-                        <li>Secure checkout process with integration for payment gateways (Stripe, Paystack,
-                            Flutterwave, PayPal)</li>
-                        <li>Email notifications for account registration, order confirmation, and password resets</li>
-                        <li>Google OAuth login and Google reCAPTCHA (in progress)</li>
-                        <li>Database seeding with realistic dummy data for testing and development</li>
-                        <li>Free shipping logic for orders above a specified threshold</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project">
                 <div class="project-name">Tenece Clone Website</div>
                 <div class="project-tech">PHP, MySQL, JavaScript, CSS, HTML</div>
                 <div class="description">
@@ -230,20 +175,55 @@
             </div>
 
             <div class="project">
-                <div class="project-name">Mobile-First Web Application</div>
+                <div class="project-name">Urbanist E-Commerce Website</div>
+                <div class="project-tech">Laravel, MySQL, JavaScript, CSS, HTML</div>
                 <div class="description">
-                    This project demonstrates a modern mobile-first design strategy, prioritizing smartphone and tablet
-                    users while maintaining full responsiveness across desktops. The application features a clean UI,
-                    fast load times, and intuitive navigation, delivering a seamless user experience regardless of
-                    screen size.
+                    Urbanist is a modern and scalable e-commerce website built for selling furniture and home décor
+                    products.
+                    It delivers a seamless shopping experience for both guests and registered users, with advanced
+                    product
+                    browsing, filtering, and checkout functionalities. The project focuses on performance, secure
+                    transactions,
+                    and clean UI design.
                 </div>
                 <div>
                     <h4>Features</h4>
                     <ul>
-                        <li>Developed using HTML5, CSS3 (Flexbox & Grid), JavaScript.</li>
-                        <li>Optimized images, assets, and layout for fast loading on slower networks</li>
-                        <li>Designed with touch-friendly elements and minimized input friction for mobile users</li>
-                        <li>Prioritized performance, accessibility, and usability on mobile devices</li>
+                        <li>Custom user authentication (registration, login, password reset)</li>
+                        <li>Product catalog with categories, filters, and search functionality</li>
+                        <li>Cart and wishlist systems with session-based guest support</li>
+                        <li>Secure checkout integrated with Stripe, Paystack, Flutterwave, and PayPal</li>
+                        <li>Email notifications for registration, order confirmation, and password resets</li>
+                        <li>Google OAuth login and reCAPTCHA</li>
+                        <li>Database seeding with realistic dummy data</li>
+                        <li>Free shipping for orders above a defined amount</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-name">Crafted Multi-Vendor E-Commerce Store</div>
+                <div class="project-tech">Laravel, MySQL, JavaScript, CSS, HTML</div>
+                <div class="description">
+                    Crafted is a multi-vendor e-commerce platform designed for artisans and small businesses to sell
+                    handcrafted
+                    products online. The project emphasizes scalability, vendor independence, and a smooth user
+                    experience across
+                    all devices. It demonstrates strong backend logic and well-structured database design for managing
+                    multiple
+                    vendors and their stores.
+                </div>
+                <div>
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Multi-vendor system with dedicated vendor dashboards</li>
+                        <li>Product and order management for each vendor</li>
+                        <li>Advanced search and filtering by product, category, and seller</li>
+                        <li>Integrated cart and checkout with multiple payment gateways</li>
+                        <li>Responsive, mobile-first layout with modern UI</li>
+                        <li>Admin control panel for managing vendors, users, and orders</li>
+                        <li>Optimized MySQL database with efficient query handling</li>
+                        <li>Email alerts for vendor registration, new orders, and customer inquiries</li>
                     </ul>
                 </div>
             </div>
@@ -275,30 +255,17 @@
             <div class="section-title">Career Objective</div>
             <div class="description">
                 <p>
-                    To build a successful career as a Full-Stack Web Developer, where I can apply my technical expertise
-                    in developing scalable, user-centric web applications while continually learning and contributing to
-                    team and organizational growth. I aim to inspire and empower others through mentoring and knowledge
-                    sharing, bridging the gap between theory and practical application in the tech ecosystem.
+                    To advance as a Full-Stack Web Developer by applying a hands-on, growth-oriented approach to
+                    building scalable, secure, and user-focused web applications. I’m passionate about continuous learning, refining
+                    technical excellence, and embracing new challenges that drive both personal and organizational growth. Through collaboration and knowledge sharing, I strive to create impactful digital solutions that inspire innovation and
+                    enhance user experiences across the web.
                 </p>
             </div>
-            <div class="section-title">Languages</div>
-            <ul>
-                <li>English (Fluent)</li>
-                <li>Igbo (Fluent)</li>
-                <li>Yoruba (Basic)</li>
-            </ul>
-            <div class="section-title">Availability</div>
-            <p>
-                I am available for full-time positions, open to remote and open to relocation opportunities. I am eager
-                to contribute my skills and passion for web development to a dynamic team and help create impactful
-                digital solutions.
-            </p>
         </section>
-
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="assets/js/my_cv.js"></script>
 </body>
 
-</html>
+</html> -->

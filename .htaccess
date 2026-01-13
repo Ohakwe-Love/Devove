@@ -1,8 +1,11 @@
 RewriteEngine On
 
-# Redirect requests to specific PHP files
+# Let static files and folders pass
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Example: /contact → contact.php
-RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
+# Exclude admin routes so they go to the admin router
+RewriteCond %{REQUEST_URI} !^/admin/
+
+# Everything else routes to main site
+RewriteRule ^ index.php [L]

@@ -1,0 +1,24 @@
+.page-not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.page-not-found-container img {
+    width: 300px;
+}
+
+.page-not-found-container h1 {
+    font-size: 50px;
+}
+
+@media (max-width: 900px) {
+    .page-not-found-container h1 {
+        font-size: 30px;
+    }
+}

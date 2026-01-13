@@ -1,24 +1,12 @@
 <?php
-require_once __DIR__ . '/components/layout.php';
-
-// $path = trim($_SERVER['REQUEST_URI'], '/');
-// $path = str_replace('devove.test/', '', $path);
-
-// if ($path === '' || $path === 'index') {
-//     render('home');
-// } elseif (file_exists(__DIR__ . "/pages/$path.php")) {
-//     render($path);
-// } else {
-//     http_response_code(404);
-//     render('404', ['message' => 'Page not found']);
-// }
+require_once __DIR__ . '/layout/layout.php';
 
 $path = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 
 switch ($path) {
     case '':
         render('home', [
-            'title' => 'Welcome to Devove',
+            'title' => 'Ohakwe Love - Software Engineer | Full-Stack Developer',
             'css'   => 'style.css',
         ]);
         break;
@@ -39,10 +27,19 @@ switch ($path) {
         ]);
         break;
 
+    case 'resume':
+        render_plain('my_cv', [
+            'title' => 'My Resume',
+            'css'   => 'my_cv.css',
+            'js'    => 'my_cv.js'
+        ]);
+        break;
+
     default:
         http_response_code(404);
-        render('404', [
-            'title' => 'Page Not Found'
+        render_plain('404', [
+            'title' => 'Page Not Found',
+            'css'   => '404.css'
         ]);
         break;
 }

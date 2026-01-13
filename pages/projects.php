@@ -3,7 +3,7 @@
     <section class="banner">
         <div class="container banner-container">
             <div class="text-content">
-                <h1>Projects</h1>
+                <h1 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">Projects</h1>
 
                 <p>
                     <a href="/">
@@ -26,7 +26,7 @@
         <div class="container">
             <div class="section-header">
                 <div class="section-header-col">
-                    <div class="section-label">
+                    <div class="section-label" data-aos="fade-right" data-aos-duration="2000">
                         <span>
                             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
                                 class="size-5">
@@ -38,26 +38,28 @@
                         Projects
                     </div>
 
-                    <h2 class="section-heading">
+                    <h2 class="section-heading" data-aos="zoom-in" data-aos-duration="3000">
                         Project Showcase
                     </h2>
 
-                    <p class="section-subtitle"> Showcasing my
+                    <p class="section-subtitle" data-aos="fade-right" data-aos-duration="3000">
+                        Showcasing my
                         expertise in web development and
                         innovative solutions. Each project reflects my commitment to quality, creativity, and
                         user-centric
-                        design.</p>
+                        design.
+                    </p>
                 </div>
             </div>
 
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
                     <div class="card-shine"></div>
                     <div class="project-img-con">
                         <img src="assets/images/projects/1.png" alt="" class="project-img">
                         <!-- Action Buttons -->
                         <div class="project-actions">
-                            <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                            <a href="javascrip:void(0)" class="action-btn live-preview-btn" title="Live Preview">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -82,38 +84,36 @@
                         <div class="project-specs">
                             <div class="project-badge-con">
                                 <span class="project-badge dynamic">dynamic</span>
-                                <!-- <span class="project-badge static">static</span> -->
                             </div>
                             <div class="project-status-con">
                                 <div class="status-badge live">
                                     <span class="status-dot"></span>
                                     <span>live</span>
                                 </div>
-                                <!-- <div class="status-badge in-progress">
-                                        <span class="status-dot"></span>
-                                        <span>in progress</span>
-                                    </div> -->
+
                             </div>
                         </div>
-                        <h3 class="project-title">Frontend Development</h3>
-                        <p class="project-description">Building responsive, performant interfaces with modern
-                            frameworks
-                            and best practices in web standards.</p>
+                        <h3 class="project-title">Urbanist Online store</h3>
+                        <p class="project-description">Urbanist is a modern and scalable e-commerce website designed
+                            to offer a seamless shopping...</p>
                         <div class="project-stacks">
-                            <span class="project-stack">React</span>
-                            <span class="project-stack">TypeScript</span>
-                            <span class="project-stack">Next.js</span>
+                            <span class="project-stack">HTMl</span>
+                            <span class="project-stack">CSS</span>
+                            <span class="project-stack">JavaScript</span>
+                            <span class="project-stack">PHP</span>
+                            <span class="project-stack">Laravel</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+
+                <div class="project-card" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">
                     <div class="card-shine"></div>
                     <div class="project-img-con">
                         <img src="assets/images/projects/2.png" alt="" class="project-img">
 
                         <!-- Action Buttons -->
                         <div class="project-actions">
-                            <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                            <a href="javascrip:void(0)" class="action-btn live-preview-btn" title="Live Preview">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -146,30 +146,31 @@
                                     <span>live</span>
                                 </div>
                                 <!-- <div class="status-badge in-progress">
-                                        <span class="status-dot"></span>
-                                        <span>in progress</span>
-                                    </div> -->
+                                            <span class="status-dot"></span>
+                                            <span>in progress</span>
+                                        </div> -->
                             </div>
                         </div>
-                        <h3 class="project-title">Frontend Development</h3>
-                        <p class="project-description">Building responsive, performant interfaces with modern
-                            frameworks
-                            and best practices in web standards.</p>
+                        <h3 class="project-title">Listeo</h3>
+                        <p class="project-description">An all-in-one business entity designed for your convenience.
+                            Whether you need a place to stay, fitness coaching, event planning...</p>
                         <div class="project-stacks">
-                            <span class="project-stack">React</span>
-                            <span class="project-stack">TypeScript</span>
-                            <span class="project-stack">Next.js</span>
+                            <span class="project-stack">HTMl</span>
+                            <span class="project-stack">CSS</span>
+                            <span class="project-stack">JavaScript</span>
+                            <span class="project-stack">PHP</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+
+                <div class="project-card" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
                     <div class="card-shine"></div>
                     <div class="project-img-con">
                         <img src="assets/images/projects/3.png" alt="" class="project-img">
 
                         <!-- Action Buttons -->
                         <div class="project-actions">
-                            <a href="" class="action-btn live-preview-btn" title="Live Preview" target="_blank">
+                            <a href="javascrip:void(0)" class="action-btn live-preview-btn" title="Live Preview">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -194,35 +195,30 @@
                         <div class="project-specs">
                             <div class="project-badge-con">
                                 <span class="project-badge dynamic">dynamic</span>
-                                <!-- <span class="project-badge static">static</span> -->
                             </div>
                             <div class="project-status-con">
                                 <div class="status-badge live">
                                     <span class="status-dot"></span>
                                     <span>live</span>
                                 </div>
-                                <!-- <div class="status-badge in-progress">
-                                        <span class="status-dot"></span>
-                                        <span>in progress</span>
-                                    </div> -->
                             </div>
                         </div>
-                        <h3 class="project-title">Frontend Development</h3>
-                        <p class="project-description">Building responsive, performant interfaces with modern
-                            frameworks
-                            and best practices in web standards.</p>
+                        <h3 class="project-title">FoodCrunch</h3>
+                        <p class="project-description">A sleek web experience for a tiny mobile restaurant,
+                            combining tasty visuals with smooth, responsive design...</p>
                         <div class="project-stacks">
-                            <span class="project-stack">React</span>
-                            <span class="project-stack">TypeScript</span>
-                            <span class="project-stack">Next.js</span>
+                            <span class="project-stack">HTMl</span>
+                            <span class="project-stack">CSS</span>
+                            <span class="project-stack">JavaScript</span>
+                            <span class="project-stack">PHP</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <button class="load-more">Load more</button>
+            <!-- <button class="load-more">Load more</button> -->
 
-            <div class="" id="projects-skeleton">
+            <!-- <div class="" id="projects-skeleton">
                 <div class="project-card skeleton">
                     <div class="skeleton-img"></div>
                     <div class="skeleton-title"></div>
@@ -238,7 +234,7 @@
                     <div class="skeleton-title"></div>
                     <div class="skeleton-price"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -272,5 +268,9 @@
     </section>
 
     <div class="overlay"></div>
+    <!-- end -->
+    
+    <!-- content -->
+    <?php include_once "components/connect.php" ?>
     <!-- end -->
 </main>

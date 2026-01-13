@@ -1,0 +1,49 @@
+# Composer
+vendor/
+composer.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE and Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS specific
+*.log
+*.tmp
+.directory
+
+# PHP
+*.php~
+*.phar
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache and temporary files
+cache/
+temp/
+tmp/
+*.cache
+
+# Node modules (if using npm)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Config files with sensitive data
+config/env.php
+
+# Backup files
+*.bak
+*.backup
