@@ -296,7 +296,7 @@ Content-Type: application/json
 
 ---
 
-## 📄 Pages
+## Pages
 
 ### 1. Home Page (`/`)
 
@@ -353,7 +353,7 @@ Content-Type: application/json
 
 ---
 
-## 🛠 Technical Stack
+## Technical Stack
 
 ### Backend
 
@@ -419,7 +419,7 @@ Content-Type: application/json
 
 ---
 
-## 📱 Responsive Design
+## Responsive Design
 
 The website is optimized for:
 
