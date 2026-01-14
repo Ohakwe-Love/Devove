@@ -25,7 +25,7 @@
     <section class="projects projects-wrapper" id="projects">
         <div class="container">
             <div class="section-header">
-                <div class="section-header-col">
+                <div class="sectiorn-header-col">
                     <div class="section-label" data-aos="fade-right" data-aos-duration="1000">
                         <span>
                             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"

@@ -3,12 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description"
-        content="Love Ohakwe - Software Engineer specializing in JavaScript ecosystem. Dedicated problem-solver who thrives on learning and building innovative solutions.">
+        content="Ohakwe Love - Software Engineer specializing in Laravel, Php, and React. Dedicated problem-solver who thrives on learning and building innovative solutions.">
+
     <meta name="keywords"
         content="software engineer, JavaScript developer, web development, problem solver, PHP Developer, React JS, Laravel Developer">
-    <meta name="author" content="Love Ohakwe">
+
+    <meta name="author" content="Ohakwe Love">
+
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph meta tags for social media -->
+    <meta property="og:title" content="Ohakwe Love - Full Stack Developer Portfolio">
+
+    <meta property="og:description" content="Software Engineer specializing in Laravel, Php, and React.">
+    <meta property="og:image" content="https://devove.dev/assets/images/favicon_io/apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devove.dev/">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary">
+
+    <meta name="twitter:title" content="Ohakwe Love - Full Stack Developer Portfolio">
+    <meta name="twitter:description" content="Ohakwe Love - Software Engineer specializing in Laravel, Php, and React. Dedicated problem-solver who thrives on learning and building innovative solutions.">
+
+
     <title><?= htmlspecialchars($title) ?? 'Ohakwe Love - Software Engineer | JavaScript Developer' ?></title>
 
     <!-- favicon -->
