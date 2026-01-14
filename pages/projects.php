@@ -26,7 +26,7 @@
         <div class="container">
             <div class="section-header">
                 <div class="section-header-col">
-                    <div class="section-label" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="section-label" data-aos="fade-right" data-aos-duration="1000">
                         <span>
                             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
                                 class="size-5">
@@ -38,11 +38,11 @@
                         Projects
                     </div>
 
-                    <h2 class="section-heading" data-aos="zoom-in" data-aos-duration="3000">
+                    <h2 class="section-heading">
                         Project Showcase
                     </h2>
 
-                    <p class="section-subtitle" data-aos="fade-right" data-aos-duration="3000">
+                    <p class="section-subtitle" data-aos="fade-right" data-aos-duration="1000">
                         Showcasing my
                         expertise in web development and
                         innovative solutions. Each project reflects my commitment to quality, creativity, and

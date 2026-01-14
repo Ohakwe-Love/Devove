@@ -61,27 +61,3 @@ if (navToggle && navigation && closeNav) {
         }
     });
 }
-
-// if (navToggle) {
-//     let lastScrollY = window.scrollY;
-    
-//     window.addEventListener('scroll', () => {
-//         const currentScrollY = window.scrollY;
-        
-//         // Add 'fixed' class when scrolled down more than 100px
-//         if (currentScrollY > 100) {
-//             navToggle.classList.add('fixed');
-            
-//             // Optional: Hide when scrolling down, show when scrolling up
-//             if (currentScrollY > lastScrollY) {
-//                 navToggle.classList.add('hidden');
-//             } else {
-//                 navToggle.classList.remove('hidden');
-//             }
-//         } else {
-//             navToggle.classList.remove('fixed', 'hidden');
-//         }
-        
-//         lastScrollY = currentScrollY;
-//     });
-// }

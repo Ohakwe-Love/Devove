@@ -1,15 +1,14 @@
-<section class="content" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+<section class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
     <div class="container">
         <div class="content-container">
             <div class="content-details">
-                <h2 class="content-title" data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="100">
+                <h2 class="content-title">
                     Ready to Build Something Extraordinary?</h2>
-                <p class="content-description" data-aos="fade-right" data-aos-duration="3000"
-                    data-aos-delay="100">Let's discuss how we can transform your vision into a digital
+                <p class="content-description">Let's discuss how we can transform your vision into a digital
                     masterpiece
                     that drives results and exceeds expectations.</p>
                 <a href="contact" target="_blank" class="primary-btn animated-border" data-aos="fade-up"
-                    data-aos-duration="3000" data-aos-delay="100">
+                    data-aos-duration="1000" data-aos-delay="100">
                     Contact Here
 
                     <span>

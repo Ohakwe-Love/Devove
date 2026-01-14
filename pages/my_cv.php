@@ -1,271 +1,242 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
+<button class="download-btn" onclick="downloadPDF()">Download PDF</button>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<main class="cv-container" id="cv-container">
+    <div class="header">
+        <div class="name">Ohakwe Love</div>
+        <div class="title">Software Engineer - Web Development Specialist</div>
+        <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:ohakwemuna@gmail.com">ohakwemuna@gmail.com</a>
+            </p>
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:+2348161452508">+2348161452508</a></p>
+            <p><i class="fa-brands fa-linkedin"></i> <a
+                    href="https://www.linkedin.com/in/love-ohakwe/">linkedin.com/in/love-ohakwe</a></p>
+            <p><i class="fa-brands fa-github"></i> <a
+                    href="https://github.com/Ohakwe-Love">github.com/Ohakwe-Love</a></p>
+        </div>
+    </div>
 
-    <title>Lovely's Resume</title>
+    <section class="cv_content">
+        <div class="section-title">Professional Summary</div>
+        <div class="description">
+            <p>
+                dedicated and innovative Web Developer with proven experience in building responsive,
+                high-performance
+                websites and web applications using HTML, CSS, JavaScript, PHP, Laravel, and MySQL. I specialize in
+                crafting
+                clean, efficient, and scalable solutions that combine modern design with robust functionality.
+            </p>
 
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+            <p>
+                Driven by a passion for problem-solving, performance optimization, and digital security, I aim to
+                create web
+                experiences that not only deliver value but also make the online world a safer and more meaningful
+                place.
+                Committed to continuous growth, I strive to contribute to a better, more secure, and connected
+                digital future.
+            </p>
+        </div>
+    </section>
 
-    <link rel="stylesheet" href="assets/css/my_cv.css">
+    <section class="cv_content">
+        <div class="section-title">Professional Experience</div>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
-        rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/ee0082ad61.js" crossorigin="anonymous"></script>
-</head>
-
-<body> -->
-    <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
-
-    <main class="cv-container" id="cv-container">
-        <div class="header">
-            <div class="name">Ohakwe Love</div>
-            <div class="title">Software Engineer - Web Development Specialist</div>
-            <div class="contact-info">
-                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:ohakwemuna@gmail.com">ohakwemuna@gmail.com</a>
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Website Development Tutor</div>
+                    <div class="company">Digital Dreams ICT Academy.</div>
+                </div>
+                <div class="date">2024 - Present</div>
+            </div>
+            <div class="description">
+                <p>
+                    As a Web Development Tutor, I deliver practical, industry-relevant training to aspiring
+                    developers, helping them build strong foundational and advanced skills in modern web
+                    technologies.
                 </p>
-                <p><i class="fa-solid fa-phone"></i> <a href="tel:+2348161452508">+2348161452508</a></p>
-                <p><i class="fa-brands fa-linkedin"></i> <a
-                        href="https://www.linkedin.com/in/love-ohakwe/">linkedin.com/in/love-ohakwe</a></p>
-                <p><i class="fa-brands fa-github"></i> <a
-                        href="https://github.com/Ohakwe-Love">github.com/Ohakwe-Love</a></p>
+            </div>
+            <ul>
+                <li>Instruct and mentor students in front-end and back-end web development technologies including
+                    HTML, CSS, JavaScript and PHP</li>
+                <li>Develop and deliver structured, hands-on lessons tailored to beginner and intermediate learners.
+                </li>
+                <li>Guide students through real-world projects, code reviews, and debugging practices to build
+                    practical skills.</li>
+                <li>Provide one-on-one support, assess student progress, and offer personalized feedback to improve
+                    performance.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="cv_content">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Frontend Technologies</h4>
+                <ul class="skill-list">
+                    <li>Languages: HTML5, CSS3, JavaScript</li>
+                    <li>Libraries/Frameworks: Tailwind, Bootstrap, React Js</li>
+                    <li>Styling & UI: Tailwind CSS, Bootstrap, React Js, Sass/SCSS, Material UI, Styled Components
+                    </li>
+                    <li>Responsive Design: Media Queries, Flexbox, CSS Grid, Mobile-first Design</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Backend Technologies</h4>
+                <ul class="skill-list">
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>MVC Architecture</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Databases & Cloud</h4>
+                <ul class="skill-list">
+                    <li>Database Management: MySQL, PostgreSQL, SQLite, Query Optimization</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Version Control</h4>
+                <ul class="skill-list">
+                    <li>Git</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Soft Skills</h4>
+                <ul class="skill-list">
+                    <li>Problem Solving</li>
+                    <li>Team Collaboration</li>
+                    <li>Communication</li>
+                    <li>Time Management</li>
+                    <li>Adaptability</li>
+                    <li>Attention to Detail</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Testing & Debugging</h4>
+                <ul class="skill-list">
+                    <li>Testing Tools: PHPUnit (Laravel)</li>
+                    <li>Debugging: Chrome DevTools, Laravel Debugbar</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="cv_content">
+        <div class="section-title">Key Projects</div>
+
+        <div class="project">
+            <div class="project-name">Tenece Clone Website</div>
+            <div class="project-tech">PHP, MySQL, JavaScript, CSS, HTML</div>
+            <div class="description">
+                After discovering the Tenece website and finding its layout and design visually appealing, I
+                recreated and enhanced it as a personal project to sharpen my development skills. The clone
+                replicates the professional aesthetic of the original site while integrating functional features
+                such as user authentication and a blog viewing system. This project showcases my ability to
+                reverse-engineer existing web designs and extend them with real-world functionality using backend
+                technologies.
+            </div>
+            <div>
+                <h4>Features</h4>
+                <ul>
+                    <li>Recreated the front-end layout using HTML, CSS, and JavaScript based on Tenece's original
+                        design</li>
+                    <li>Added dynamic functionality using PHP for user registration, login, and session management
+                    </li>
+                    <li>Built a basic blog module allowing users to view blog posts</li>
+                    <li>Ensured responsiveness across devices for a seamless user experience</li>
+                    <li>Practiced clean code structure and modular PHP development</li>
+                </ul>
             </div>
         </div>
 
-        <section class="cv_content">
-            <div class="section-title">Professional Summary</div>
+        <div class="project">
+            <div class="project-name">Urbanist E-Commerce Website</div>
+            <div class="project-tech">Laravel, MySQL, JavaScript, CSS, HTML</div>
             <div class="description">
-                <p>
-                    dedicated and innovative Web Developer with proven experience in building responsive,
-                    high-performance
-                    websites and web applications using HTML, CSS, JavaScript, PHP, Laravel, and MySQL. I specialize in
-                    crafting
-                    clean, efficient, and scalable solutions that combine modern design with robust functionality.
-                </p>
-
-                <p>
-                    Driven by a passion for problem-solving, performance optimization, and digital security, I aim to
-                    create web
-                    experiences that not only deliver value but also make the online world a safer and more meaningful
-                    place.
-                    Committed to continuous growth, I strive to contribute to a better, more secure, and connected
-                    digital future.
-                </p>
+                Urbanist is a modern and scalable e-commerce website built for selling furniture and home décor
+                products.
+                It delivers a seamless shopping experience for both guests and registered users, with advanced
+                product
+                browsing, filtering, and checkout functionalities. The project focuses on performance, secure
+                transactions,
+                and clean UI design.
             </div>
-        </section>
-
-        <section class="cv_content">
-            <div class="section-title">Professional Experience</div>
-
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Website Development Tutor</div>
-                        <div class="company">Digital Dreams ICT Academy.</div>
-                    </div>
-                    <div class="date">2024 - Present</div>
-                </div>
-                <div class="description">
-                    <p>
-                        As a Web Development Tutor, I deliver practical, industry-relevant training to aspiring
-                        developers, helping them build strong foundational and advanced skills in modern web
-                        technologies.
-                    </p>
-                </div>
+            <div>
+                <h4>Features</h4>
                 <ul>
-                    <li>Instruct and mentor students in front-end and back-end web development technologies including
-                        HTML, CSS, JavaScript and PHP</li>
-                    <li>Develop and deliver structured, hands-on lessons tailored to beginner and intermediate learners.
-                    </li>
-                    <li>Guide students through real-world projects, code reviews, and debugging practices to build
-                        practical skills.</li>
-                    <li>Provide one-on-one support, assess student progress, and offer personalized feedback to improve
-                        performance.</li>
+                    <li>Custom user authentication (registration, login, password reset)</li>
+                    <li>Product catalog with categories, filters, and search functionality</li>
+                    <li>Cart and wishlist systems with session-based guest support</li>
+                    <li>Secure checkout integrated with Stripe, Paystack, Flutterwave, and PayPal</li>
+                    <li>Email notifications for registration, order confirmation, and password resets</li>
+                    <li>Google OAuth login and reCAPTCHA</li>
+                    <li>Database seeding with realistic dummy data</li>
+                    <li>Free shipping for orders above a defined amount</li>
                 </ul>
             </div>
-        </section>
+        </div>
 
-        <section class="cv_content">
-            <div class="section-title">Technical Skills</div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Frontend Technologies</h4>
-                    <ul class="skill-list">
-                        <li>Languages: HTML5, CSS3, JavaScript</li>
-                        <li>Libraries/Frameworks: Tailwind, Bootstrap, React Js</li>
-                        <li>Styling & UI: Tailwind CSS, Bootstrap, React Js, Sass/SCSS, Material UI, Styled Components
-                        </li>
-                        <li>Responsive Design: Media Queries, Flexbox, CSS Grid, Mobile-first Design</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h4>Backend Technologies</h4>
-                    <ul class="skill-list">
-                        <li>PHP</li>
-                        <li>Laravel</li>
-                        <li>MVC Architecture</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h4>Databases & Cloud</h4>
-                    <ul class="skill-list">
-                        <li>Database Management: MySQL, PostgreSQL, SQLite, Query Optimization</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h4>Version Control</h4>
-                    <ul class="skill-list">
-                        <li>Git</li>
-                        <li>GitHub</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h4>Soft Skills</h4>
-                    <ul class="skill-list">
-                        <li>Problem Solving</li>
-                        <li>Team Collaboration</li>
-                        <li>Communication</li>
-                        <li>Time Management</li>
-                        <li>Adaptability</li>
-                        <li>Attention to Detail</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h4>Testing & Debugging</h4>
-                    <ul class="skill-list">
-                        <li>Testing Tools: PHPUnit (Laravel)</li>
-                        <li>Debugging: Chrome DevTools, Laravel Debugbar</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="cv_content">
-            <div class="section-title">Key Projects</div>
-
-            <div class="project">
-                <div class="project-name">Tenece Clone Website</div>
-                <div class="project-tech">PHP, MySQL, JavaScript, CSS, HTML</div>
-                <div class="description">
-                    After discovering the Tenece website and finding its layout and design visually appealing, I
-                    recreated and enhanced it as a personal project to sharpen my development skills. The clone
-                    replicates the professional aesthetic of the original site while integrating functional features
-                    such as user authentication and a blog viewing system. This project showcases my ability to
-                    reverse-engineer existing web designs and extend them with real-world functionality using backend
-                    technologies.
-                </div>
-                <div>
-                    <h4>Features</h4>
-                    <ul>
-                        <li>Recreated the front-end layout using HTML, CSS, and JavaScript based on Tenece's original
-                            design</li>
-                        <li>Added dynamic functionality using PHP for user registration, login, and session management
-                        </li>
-                        <li>Built a basic blog module allowing users to view blog posts</li>
-                        <li>Ensured responsiveness across devices for a seamless user experience</li>
-                        <li>Practiced clean code structure and modular PHP development</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-name">Urbanist E-Commerce Website</div>
-                <div class="project-tech">Laravel, MySQL, JavaScript, CSS, HTML</div>
-                <div class="description">
-                    Urbanist is a modern and scalable e-commerce website built for selling furniture and home décor
-                    products.
-                    It delivers a seamless shopping experience for both guests and registered users, with advanced
-                    product
-                    browsing, filtering, and checkout functionalities. The project focuses on performance, secure
-                    transactions,
-                    and clean UI design.
-                </div>
-                <div>
-                    <h4>Features</h4>
-                    <ul>
-                        <li>Custom user authentication (registration, login, password reset)</li>
-                        <li>Product catalog with categories, filters, and search functionality</li>
-                        <li>Cart and wishlist systems with session-based guest support</li>
-                        <li>Secure checkout integrated with Stripe, Paystack, Flutterwave, and PayPal</li>
-                        <li>Email notifications for registration, order confirmation, and password resets</li>
-                        <li>Google OAuth login and reCAPTCHA</li>
-                        <li>Database seeding with realistic dummy data</li>
-                        <li>Free shipping for orders above a defined amount</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-name">Crafted Multi-Vendor E-Commerce Store</div>
-                <div class="project-tech">Laravel, MySQL, JavaScript, CSS, HTML</div>
-                <div class="description">
-                    Crafted is a multi-vendor e-commerce platform designed for artisans and small businesses to sell
-                    handcrafted
-                    products online. The project emphasizes scalability, vendor independence, and a smooth user
-                    experience across
-                    all devices. It demonstrates strong backend logic and well-structured database design for managing
-                    multiple
-                    vendors and their stores.
-                </div>
-                <div>
-                    <h4>Features</h4>
-                    <ul>
-                        <li>Multi-vendor system with dedicated vendor dashboards</li>
-                        <li>Product and order management for each vendor</li>
-                        <li>Advanced search and filtering by product, category, and seller</li>
-                        <li>Integrated cart and checkout with multiple payment gateways</li>
-                        <li>Responsive, mobile-first layout with modern UI</li>
-                        <li>Admin control panel for managing vendors, users, and orders</li>
-                        <li>Optimized MySQL database with efficient query handling</li>
-                        <li>Email alerts for vendor registration, new orders, and customer inquiries</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="cv_content">
-            <div class="section-title">Education</div>
-
-            <div class="education-item">
-                <div class="degree">Post-Secondary Certification</div>
-                <div class="institution">Confidence Academy</div>
-                <div class="date">2014 - 2020</div>
-            </div>
-            <div class="education-item">
-                <div class="institution">Currently pursuing tertiary eduction</div>
-            </div>
-        </section>
-
-        <section class="cv_content">
-            <div class="section-title">Certifications</div>
-            <ul>
-                <li>Web Developement Certification - Digital Dreams ICT Academy</li>
-                <li>Jobberman Certification</li>
-                <li>Online Course Certifications - Udemy Platform</li>
-            </ul>
-        </section>
-
-        <section class="cv_content">
-            <div class="section-title">Career Objective</div>
+        <div class="project">
+            <div class="project-name">Crafted Multi-Vendor E-Commerce Store</div>
+            <div class="project-tech">Laravel, MySQL, JavaScript, CSS, HTML</div>
             <div class="description">
-                <p>
-                    To advance as a Full-Stack Web Developer by applying a hands-on, growth-oriented approach to
-                    building scalable, secure, and user-focused web applications. I’m passionate about continuous learning, refining
-                    technical excellence, and embracing new challenges that drive both personal and organizational growth. Through collaboration and knowledge sharing, I strive to create impactful digital solutions that inspire innovation and
-                    enhance user experiences across the web.
-                </p>
+                Crafted is a multi-vendor e-commerce platform designed for artisans and small businesses to sell
+                handcrafted
+                products online. The project emphasizes scalability, vendor independence, and a smooth user
+                experience across
+                all devices. It demonstrates strong backend logic and well-structured database design for managing
+                multiple
+                vendors and their stores.
             </div>
-        </section>
-    </main>
+            <div>
+                <h4>Features</h4>
+                <ul>
+                    <li>Multi-vendor system with dedicated vendor dashboards</li>
+                    <li>Product and order management for each vendor</li>
+                    <li>Advanced search and filtering by product, category, and seller</li>
+                    <li>Integrated cart and checkout with multiple payment gateways</li>
+                    <li>Responsive, mobile-first layout with modern UI</li>
+                    <li>Admin control panel for managing vendors, users, and orders</li>
+                    <li>Optimized MySQL database with efficient query handling</li>
+                    <li>Email alerts for vendor registration, new orders, and customer inquiries</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script src="assets/js/my_cv.js"></script>
-</body>
+    <section class="cv_content">
+        <div class="section-title">Education</div>
 
-</html> -->
+        <div class="education-item">
+            <div class="degree">Post-Secondary Certification</div>
+            <div class="institution">Confidence Academy</div>
+            <div class="date">2014 - 2020</div>
+        </div>
+        <div class="education-item">
+            <div class="institution">Currently pursuing tertiary eduction</div>
+        </div>
+    </section>
+
+    <section class="cv_content">
+        <div class="section-title">Certifications</div>
+        <ul>
+            <li>Web Developement Certification - Digital Dreams ICT Academy</li>
+            <li>Jobberman Certification</li>
+            <li>Online Course Certifications - Udemy Platform</li>
+        </ul>
+    </section>
+
+    <section class="cv_content">
+        <div class="section-title">Career Objective</div>
+        <div class="description">
+            <p>
+                To advance as a Full-Stack Web Developer by applying a hands-on, growth-oriented approach to
+                building scalable, secure, and user-focused web applications. I’m passionate about continuous learning, refining
+                technical excellence, and embracing new challenges that drive both personal and organizational growth. Through collaboration and knowledge sharing, I strive to create impactful digital solutions that inspire innovation and
+                enhance user experiences across the web.
+            </p>
+        </div>
+    </section>
+</main>
