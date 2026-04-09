@@ -86,7 +86,7 @@ html {
 
 body {
     font-size: 16px;
-    background-color: var(--background-2);
+    background-color: var(--background-2) !important;
     font-family: var(--font-family);
     color: var(--contrast);
 }

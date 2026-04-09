@@ -38,6 +38,7 @@ tmp/
 
 # Node modules (if using npm)
 node_modules/
+dist/
 npm-debug.log
 yarn-error.log
 

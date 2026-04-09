@@ -4,8 +4,5 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Exclude admin routes so they go to the admin router
-RewriteCond %{REQUEST_URI} !^/admin/
-
-# Everything else routes to main site
-RewriteRule ^ index.php [L]
+# Single-page app fallback
+RewriteRule ^ index.html [L]
