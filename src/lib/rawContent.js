@@ -95,12 +95,40 @@ function trimBannerHeader(html) {
   );
 }
 
-function ensureCtaSection(html) {
+function createContentSection({
+  title,
+  description,
+  href,
+  label,
+}) {
+  return `
+<section class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+  <div class="container">
+    <div class="content-container">
+      <div class="content-details">
+        <h2 class="content-title">${title}</h2>
+        <p class="content-description">${description}</p>
+        <a href="${href}" target="_blank" class="primary-btn animated-border" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          ${label}
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+`.trim();
+}
+
+function ensureCtaSection(html, cta = ctaMarkup) {
   if (html.includes('<section class="content"')) {
     return html;
   }
 
-  return `${html}\n${ctaMarkup}`;
+  return `${html}\n${cta}`;
 }
 
 const currentYear = new Date().getFullYear();
@@ -239,6 +267,20 @@ const ctaMarkup = `
 </section>
 `.trim();
 
+const aboutCtaMarkup = createContentSection({
+  title: "Want to view a few of my works?",
+  description: "Feed your gaze with some amazing projects I've done.",
+  href: "/projects",
+  label: "Explore projects",
+});
+
+const skillsCtaMarkup = createContentSection({
+  title: "Need these skills on your next build?",
+  description: "Let's talk about how I can help bring your product to life with the right stack and execution.",
+  href: "/contact",
+  label: "Start a conversation",
+});
+
 const notFoundMarkup = `
 <main>
   <section class="page-not-found-container">
@@ -336,8 +378,8 @@ const heroMarkup = wrapMain(extractBetween(homeMainRaw, '<section class="hero-wr
 const aboutContentMarkup = extractBetween(homeMainRaw, "<!-- about -->", "<!-- stacks -->");
 const skillsContentMarkup = extractBetween(homeMainRaw, "<!-- stacks -->", "<!-- Services Section -->");
 const servicesContentMarkup = extractBetween(homeMainRaw, "<!-- Services Section -->", "<!-- projects -->");
-const aboutMarkup = wrapMain(ensureCtaSection(`${createBanner("About")}\n${aboutContentMarkup}`));
-const skillsMarkup = wrapMain(ensureCtaSection(`${createBanner("Skills")}\n${skillsContentMarkup}`));
+const aboutMarkup = wrapMain(`${createBanner("About")}\n${aboutContentMarkup}`);
+const skillsMarkup = wrapMain(`${createBanner("Skills")}\n${skillsContentMarkup}`);
 const servicesMarkup = wrapMain(ensureCtaSection(`${createBanner("Services")}\n${servicesContentMarkup}`));
 const projectsMarkup = wrapMain(
   ensureCtaSection(trimBannerHeader(extractBetween(projectsDocumentRaw, '<section class="banner">', "</main>"))),
@@ -347,6 +389,8 @@ const contactMarkup = wrapMain(
 );
 
 export const footerMarkup = normalizeLinks(footerMarkupBase);
+export const aboutPageCtaMarkup = normalizeLinks(aboutCtaMarkup);
+export const skillsPageCtaMarkup = normalizeLinks(skillsCtaMarkup);
 
 export const pageMarkup = {
   home: normalizeLinks(heroMarkup),

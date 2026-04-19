@@ -6,8 +6,70 @@ body {
   margin: 0;
 }
 
+body.preloader-active {
+  overflow: hidden;
+}
+
 #root {
   min-height: 100vh;
+}
+
+.app-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 20000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--background-2) 94%, black);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 320ms ease,
+    visibility 320ms ease;
+}
+
+.app-preloader.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.app-preloader.is-hiding {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.app-preloader__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+
+.app-preloader__loader {
+  width: 56px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 4px solid var(--accent);
+  border-radius: 50%;
+  border-right-color: transparent;
+  animation: preloader-spin 1.2s linear infinite;
+}
+
+.app-preloader__loader::before,
+.app-preloader__loader::after {
+  content: "";
+  grid-area: 1 / 1;
+  margin: 3px;
+  border: inherit;
+  border-radius: 50%;
+  animation: preloader-spin 2s linear infinite reverse;
+}
+
+.app-preloader__loader::after {
+  margin: 10px;
+  animation-duration: 2.8s;
 }
 
 body #nav .nav-profile {
@@ -70,6 +132,15 @@ body.page-about .content {
   margin-top: 32px;
 }
 
+body.page-home {
+  overflow: hidden;
+  height: 100vh;
+}
+
+body.page-home main {
+  height: 100vh;
+}
+
 @media (max-width: 600px) {
   body #nav .nav-profile {
     width: 100%;
@@ -113,6 +184,12 @@ body.aos-disabled [data-aos] {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-spin {
+  100% {
+    transform: rotate(1turn);
   }
 }
 

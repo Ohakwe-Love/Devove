@@ -1,6 +1,7 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import AppShell from "./components/AppShell";
+import Preloader from "./components/Preloader";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import SkillsPage from "./pages/SkillsPage";
@@ -28,6 +29,7 @@ export default function App() {
   return (
     <>
       <ScrollManager />
+      <Preloader />
 
       <Routes>
         <Route element={<AppShell />}>
