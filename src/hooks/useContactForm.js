@@ -1,6 +1,27 @@
 import { useEffect } from "react";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mayvlgrq";
+const CONTACT_ENDPOINT = "/api/contact";
+
+function normalizeSingleLine(value) {
+  return String(value ?? "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizeMultiline(value) {
+  return String(value ?? "")
+    .replace(/\r\n/g, "\n")
+    .split("\n")
+    .map((line) => line.trim())
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+function getFormField(form, name) {
+  const field = form.elements.namedItem(name);
+  return field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement ? field : null;
+}
 
 export default function useContactForm() {
   useEffect(() => {
@@ -61,9 +82,37 @@ export default function useContactForm() {
     const handleSubmit = async (event) => {
       event.preventDefault();
 
+      if (!contactForm.reportValidity()) {
+        return;
+      }
+
       const submitButton = contactForm.querySelector('button[type="submit"]');
+      if (!submitButton) {
+        return;
+      }
+
       const originalButtonText = submitButton.innerHTML;
-      const formData = new FormData(contactForm);
+      const nameField = getFormField(contactForm, "name");
+      const emailField = getFormField(contactForm, "email");
+      const subjectField = getFormField(contactForm, "subject");
+      const messageField = getFormField(contactForm, "message");
+
+      if (!nameField || !emailField || !subjectField || !messageField) {
+        showNotification("error", "The contact form is missing a required field.");
+        return;
+      }
+
+      const formValues = {
+        name: normalizeSingleLine(nameField.value),
+        email: normalizeSingleLine(emailField.value).toLowerCase(),
+        subject: normalizeSingleLine(subjectField.value),
+        message: normalizeMultiline(messageField.value),
+      };
+
+      nameField.value = formValues.name;
+      emailField.value = formValues.email;
+      subjectField.value = formValues.subject;
+      messageField.value = formValues.message;
 
       submitButton.disabled = true;
       submitButton.innerHTML = `
@@ -77,25 +126,33 @@ export default function useContactForm() {
       `;
 
       try {
-        const response = await fetch(FORMSPREE_ENDPOINT, {
+        const response = await fetch(CONTACT_ENDPOINT, {
           method: "POST",
           headers: {
             Accept: "application/json",
+            "Content-Type": "application/json",
           },
-          body: formData,
+          body: JSON.stringify(formValues),
         });
 
+        const responseBody = await response.json().catch(() => ({}));
+
         if (!response.ok) {
-          throw new Error("Form submission failed");
+          throw new Error(
+            responseBody.error || "I couldn't send your message right now. Please try again.",
+          );
         }
 
-        showNotification("success", "Thank you! Your message has been sent successfully.");
+        showNotification(
+          "success",
+          responseBody.message || "Thank you! Your message has been sent successfully.",
+        );
         contactForm.reset();
       } catch (error) {
         console.error(error);
         showNotification(
           "error",
-          "An unexpected error occurred. Please try again or contact me directly.",
+          error.message || "An unexpected error occurred. Please try again or contact me directly.",
         );
       } finally {
         submitButton.disabled = false;

@@ -56,6 +56,7 @@ function normalizeLinks(html) {
     .replaceAll("src='assets/", "src='/assets/")
     .replaceAll('href="assets/', 'href="/assets/')
     .replaceAll("href='assets/", "href='/assets/")
+    .replaceAll('action="https://formspree.io/f/mayvlgrq"', 'action="/api/contact"')
     .replaceAll('href="index.html"', 'href="/"')
     .replaceAll("href='./index.html'", 'href="/"')
     .replaceAll('href="projects.html"', 'href="/projects"')
@@ -67,6 +68,7 @@ function normalizeLinks(html) {
     .replaceAll('href="#about"', 'href="/about"')
     .replaceAll('href="#skills"', 'href="/skills"')
     .replaceAll('href="#projects"', 'href="/projects"')
+    .replaceAll('name="_replyto"', 'name="email"')
     .replaceAll('src="/assets/images/img2.jpeg"', 'src="/assets/images/me/me.jpg"')
     .replaceAll('href="javascrip:void(0)"', 'href="#"')
     .replaceAll('href="javascript:void(0)"', 'href="#"');

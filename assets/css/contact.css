@@ -28,6 +28,7 @@
     border-radius: 4px;
     font-size: 14px;
     color: var(--text-color);
+    background-color: red;
 }
 
 .form-header {
